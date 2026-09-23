@@ -70,13 +70,13 @@ export default function LawEnforcementPage() {
       </section>
 
       {/* Guidelines */}
-      <section className="bg-white py-20 dark:bg-black lg:py-28">
+      <section className="bg-white py-20  lg:py-28">
         <div className="mx-auto max-w-4xl px-6">
           <div className="text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl dark:text-white">
+            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl ">
               Guidelines
             </h2>
-            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 dark:text-zinc-400">
+            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
               How we evaluate law enforcement requests.
             </p>
           </div>
@@ -85,12 +85,12 @@ export default function LawEnforcementPage() {
             {guidelines.map((g) => (
               <div
                 key={g.title}
-                className="rounded-2xl border border-zinc-200 bg-white p-6 dark:border-zinc-800 dark:bg-zinc-950"
+                className="rounded-2xl border border-zinc-200 bg-white p-6"
               >
-                <h3 className="text-base font-bold text-black dark:text-white">
+                <h3 className="text-base font-bold text-black ">
                   {g.title}
                 </h3>
-                <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                <p className="mt-2 text-sm leading-6 text-zinc-600 ">
                   {g.text}
                 </p>
               </div>
@@ -100,14 +100,14 @@ export default function LawEnforcementPage() {
       </section>
 
       {/* Requirements + submission */}
-      <section className="bg-zinc-50 py-20 dark:bg-zinc-950 lg:py-28">
+      <section className="bg-zinc-50 py-20 lg:py-28">
         <div className="mx-auto max-w-4xl px-6">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
             <div>
-              <h2 className="text-2xl font-semibold tracking-tight text-black sm:text-3xl dark:text-white">
+              <h2 className="text-2xl font-semibold tracking-tight text-black sm:text-3xl ">
                 What to include in your request
               </h2>
-              <p className="mt-4 text-base leading-7 text-zinc-600 dark:text-zinc-400">
+              <p className="mt-4 text-base leading-7 text-zinc-600 ">
                 Incomplete requests will be returned for clarification.
               </p>
               <ul className="mt-8 space-y-3">
@@ -118,7 +118,7 @@ export default function LawEnforcementPage() {
                         <path d="m5 13 4 4L19 7" />
                       </svg>
                     </span>
-                    <span className="text-sm leading-6 text-zinc-700 dark:text-zinc-300">
+                    <span className="text-sm leading-6 text-zinc-700 ">
                       {req}
                     </span>
                   </li>
@@ -127,33 +127,33 @@ export default function LawEnforcementPage() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-semibold tracking-tight text-black sm:text-3xl dark:text-white">
+              <h2 className="text-2xl font-semibold tracking-tight text-black sm:text-3xl ">
                 How to submit
               </h2>
-              <p className="mt-4 text-base leading-7 text-zinc-600 dark:text-zinc-400">
+              <p className="mt-4 text-base leading-7 text-zinc-600 ">
                 Send your official request to our legal team. Use your agency
                 email — we do not respond to requests from personal email
                 addresses.
               </p>
 
-              <div className="mt-8 rounded-2xl border border-zinc-200 bg-white p-6 dark:border-zinc-800 dark:bg-zinc-900">
-                <p className="text-xs font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">
+              <div className="mt-8 rounded-2xl border border-zinc-200 bg-white p-6 ">
+                <p className="text-xs font-bold uppercase tracking-wider text-zinc-500 ">
                   Official email
                 </p>
                 <a
                   href="mailto:hello@oyeridegh.com?subject=Law%20Enforcement%20Data%20Request"
-                  className="mt-2 block break-all text-lg font-semibold text-[#054997] underline dark:text-[#7bb3e8]"
+                  className="mt-2 block break-all text-lg font-semibold text-[#054997] underline "
                 >
                   hello@oyeridegh.com
                 </a>
-                <p className="mt-4 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                <p className="mt-4 text-sm leading-6 text-zinc-600 ">
                   Please include <strong>&quot;Law Enforcement Request&quot;</strong> in
                   the subject line.
                 </p>
               </div>
 
-              <div className="mt-6 rounded-2xl border border-amber-200 bg-amber-50 p-5 dark:border-amber-900/50 dark:bg-amber-950/30">
-                <p className="text-sm leading-6 text-amber-900 dark:text-amber-300">
+              <div className="mt-6 rounded-2xl border border-amber-200 bg-amber-50 p-5 ">
+                <p className="text-sm leading-6 text-amber-900 ">
                   <strong>Urgent safety matters:</strong> If a request involves an
                   imminent risk to life, note <strong>URGENT</strong> in the subject
                   line and include a callback number for our team.

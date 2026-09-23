@@ -124,13 +124,13 @@ export default function CareersPage() {
       </section>
 
       {/* How we work */}
-      <section id="how-we-work" className="scroll-mt-24 bg-white py-20 dark:bg-black lg:py-28">
+      <section id="how-we-work" className="scroll-mt-24 bg-white py-20  lg:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
               How we work
             </h2>
-            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 dark:text-zinc-400">
+            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
               Four principles that guide every decision at OyeRide.
             </p>
           </div>
@@ -139,15 +139,15 @@ export default function CareersPage() {
             {values.map((value) => (
               <div
                 key={value.title}
-                className="rounded-2xl border border-zinc-200 bg-white p-6 dark:border-zinc-800 dark:bg-zinc-950"
+                className="rounded-2xl border border-zinc-200 bg-white p-6"
               >
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#e6eef9] text-[#054997]">
                   {value.icon}
                 </div>
-                <h3 className="mt-6 text-lg font-bold text-black dark:text-white">
+                <h3 className="mt-6 text-lg font-bold text-black ">
                   {value.title}
                 </h3>
-                <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                <p className="mt-2 text-sm leading-6 text-zinc-600 ">
                   {value.description}
                 </p>
               </div>
@@ -157,13 +157,13 @@ export default function CareersPage() {
       </section>
 
       {/* Open roles */}
-      <section id="roles" className="scroll-mt-24 bg-zinc-50 py-20 dark:bg-zinc-950 lg:py-28">
+      <section id="roles" className="scroll-mt-24 bg-zinc-50 py-20 lg:py-28">
         <div className="mx-auto max-w-5xl px-6">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
               Open roles
             </h2>
-            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 dark:text-zinc-400">
+            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
               {openRoles.length} position{openRoles.length === 1 ? "" : "s"} currently open.
             </p>
           </div>
@@ -172,26 +172,26 @@ export default function CareersPage() {
             {openRoles.map((role) => (
               <div
                 key={role.title}
-                className="group rounded-2xl border border-zinc-200 bg-white p-6 transition hover:border-[#054997] hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900 sm:p-8"
+                className="group rounded-2xl border border-zinc-200 bg-white p-6 transition hover:border-[#054997] hover:shadow-md sm:p-8"
               >
                 <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
                   <div className="flex-1">
                     <div className="flex flex-wrap items-center gap-3">
-                      <h3 className="text-xl font-bold text-black dark:text-white">
+                      <h3 className="text-xl font-bold text-black ">
                         {role.title}
                       </h3>
-                      <span className="inline-flex rounded-full bg-[#e6eef9] px-3 py-1 text-xs font-semibold text-[#054997] dark:bg-[#0a2b56] dark:text-[#7bb3e8]">
+                      <span className="inline-flex rounded-full bg-[#e6eef9] px-3 py-1 text-xs font-semibold text-[#054997]">
                         {role.type}
                       </span>
                     </div>
-                    <p className="mt-2 flex items-center gap-2 text-sm font-medium text-zinc-500 dark:text-zinc-400">
+                    <p className="mt-2 flex items-center gap-2 text-sm font-medium text-zinc-500 ">
                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
                         <circle cx="12" cy="10" r="3" />
                       </svg>
                       {role.location}
                     </p>
-                    <p className="mt-4 max-w-2xl text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                    <p className="mt-4 max-w-2xl text-sm leading-6 text-zinc-600 ">
                       {role.description}
                     </p>
                   </div>
@@ -217,7 +217,7 @@ export default function CareersPage() {
       </section>
 
       {/* Perks */}
-      <section className="bg-white py-20 dark:bg-black lg:py-28">
+      <section className="bg-white py-20  lg:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
             {/* Image */}
@@ -231,10 +231,10 @@ export default function CareersPage() {
 
             {/* Perks list */}
             <div>
-              <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+              <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
                 What we offer
               </h2>
-              <p className="mt-4 text-base leading-7 text-zinc-600 dark:text-zinc-400">
+              <p className="mt-4 text-base leading-7 text-zinc-600 ">
                 Working at OyeRide comes with real benefits — not the ping-pong
                 table kind.
               </p>
@@ -247,7 +247,7 @@ export default function CareersPage() {
                         <path d="m5 13 4 4L19 7" />
                       </svg>
                     </span>
-                    <span className="text-sm leading-6 text-zinc-700 dark:text-zinc-300">
+                    <span className="text-sm leading-6 text-zinc-700 ">
                       {perk}
                     </span>
                   </li>
@@ -259,12 +259,12 @@ export default function CareersPage() {
       </section>
 
       {/* No matching role CTA */}
-      <section className="bg-zinc-50 py-20 dark:bg-zinc-950 lg:py-28">
+      <section className="bg-zinc-50 py-20 lg:py-28">
         <div className="mx-auto max-w-3xl px-6 text-center">
-          <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl dark:text-white">
+          <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl ">
             Don&apos;t see your role?
           </h2>
-          <p className="mt-6 text-base leading-7 text-zinc-600 dark:text-zinc-400">
+          <p className="mt-6 text-base leading-7 text-zinc-600 ">
             We&apos;re growing fast and always interested in meeting talented
             people. If you think you can help us move Ghana, send us a note
             telling us how.

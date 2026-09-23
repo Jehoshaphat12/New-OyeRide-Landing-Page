@@ -161,6 +161,9 @@ const sideCards: SideCard[] = [
 
 export function Header() {
   const [openTab, setOpenTab] = useState<string | null>(null);
+  // Which tab's links are currently painted in the panel. Only updated while a
+  // tab is open, so the content doesn't swap out mid-close.
+  const [renderedTab, setRenderedTab] = useState<string>(navTabs[0].id);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileExpandedTab, setMobileExpandedTab] = useState<string | null>(null);
   const headerRef = useRef<HTMLElement>(null);
@@ -175,6 +178,11 @@ export function Header() {
     document.addEventListener("mousedown", handleClick);
     return () => document.removeEventListener("mousedown", handleClick);
   }, []);
+
+  // Keep the mega-menu's content in sync with the hovered/active tab.
+  useEffect(() => {
+    if (openTab) setRenderedTab(openTab);
+  }, [openTab]);
 
   // Lock body scroll when mobile menu is open.
   // Using both overflow hidden AND position:fixed trick for iOS Safari stability.
@@ -215,6 +223,9 @@ export function Header() {
     setMobileOpen(false);
     setMobileExpandedTab(null);
   };
+
+  const isPanelOpen = openTab !== null;
+  const activeTab = navTabs.find((t) => t.id === renderedTab) ?? navTabs[0];
 
   return (
     <>
@@ -288,84 +299,87 @@ export function Header() {
           </button>
         </div>
 
-        {/* Desktop mega-menu — absolute overlay, doesn't shift page */}
-        {openTab && (
-          <div className="absolute left-0 right-0 top-full hidden lg:block">
-            <div className="bg-white text-black shadow-2xl">
-              <div className="mx-auto grid max-w-7xl gap-10 px-6 py-10 lg:grid-cols-[1fr_320px]">
-                <div
-                  className="grid gap-8 bg-zinc-100 rounded-4xl p-6"
-                  style={{
-                    gridTemplateColumns: `repeat(${
-                      navTabs.find((t) => t.id === openTab)?.columns.length ?? 1
-                    }, minmax(0, 1fr))`,
-                  }}
-                >
-                  {navTabs
-                    .find((t) => t.id === openTab)
-                    ?.columns.map((column, i) => (
-                      <div key={i} className="">
-                        {column.heading && (
-                          <h3 className="mb-4 text-xs font-bold uppercase tracking-wider text-zinc-500">
-                            {column.heading}
-                          </h3>
-                        )}
-                        <ul className="space-y-2.5">
-                          {column.links.map((link) => (
-                            <li key={link.href + link.label}>
-                              <Link
-                                href={link.href}
-                                onClick={() => setOpenTab(null)}
-                                className="block text-sm font-medium text-zinc-800 transition hover:text-[#054997]"
-                              >
-                                {link.label}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    ))}
-                </div>
-
-                <aside className="space-y-2 border-l border-zinc-200 p-4 pl-8 bg-zinc-100 rounded-4xl ">
-                  {sideCards.map((card) => (
-                    <Link
-                      key={card.href}
-                      href={card.href}
-                      onClick={() => setOpenTab(null)}
-                      className="group flex items-start gap-3 rounded-xl p-3 transition hover:bg-zinc-50"
-                    >
-                      <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#e6eef9] text-[#054997]">
-                        {card.icon}
-                      </span>
-                      <span className="flex-1">
-                        <span className="flex items-center justify-between gap-2">
-                          <span className="text-sm font-bold text-zinc-900">
-                            {card.title}
-                          </span>
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-zinc-400 transition group-hover:translate-x-0.5 group-hover:text-[#054997]">
-                            <path d="M5 12h14M12 5l7 7-7 7" />
-                          </svg>
-                        </span>
-                        <span className="mt-0.5 block text-xs leading-5 text-zinc-500">
-                          {card.description}
-                        </span>
-                      </span>
-                    </Link>
-                  ))}
-                </aside>
+        {/* Desktop mega-menu — absolute overlay, doesn't shift page.
+            Always mounted so the open/close transitions can play. */}
+        <div
+          className={`absolute left-0 right-0 top-full hidden overflow-hidden shadow-2xl transition-[opacity,visibility] duration-200 ease-out lg:block ${
+            isPanelOpen
+              ? "visible opacity-100"
+              : "invisible pointer-events-none opacity-0"
+          }`}
+        >
+          <div
+            className={`bg-white text-black transition-transform duration-300 ease-out ${
+              isPanelOpen ? "translate-y-0" : "-translate-y-full"
+            }`}
+          >
+            <div className="mx-auto grid max-w-7xl gap-10 px-6 py-10 lg:grid-cols-[1fr_320px]">
+              <div
+                className="grid gap-8 rounded-4xl bg-zinc-100 p-6"
+                style={{
+                  gridTemplateColumns: `repeat(${
+                    activeTab.columns.length ?? 1
+                  }, minmax(0, 1fr))`,
+                }}
+              >
+                {activeTab.columns.map((column, i) => (
+                  <div key={i} className="">
+                    {column.heading && (
+                      <h3 className="mb-4 text-xs font-bold uppercase tracking-wider text-zinc-500">
+                        {column.heading}
+                      </h3>
+                    )}
+                    <ul className="space-y-2.5">
+                      {column.links.map((link) => (
+                        <li key={link.href + link.label}>
+                          <Link
+                            href={link.href}
+                            onClick={() => setOpenTab(null)}
+                            className="block text-sm font-medium text-zinc-800 transition hover:text-[#054997]"
+                          >
+                            {link.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
               </div>
+
+              <aside className="space-y-2 rounded-4xl border-l border-zinc-200 bg-zinc-100 p-4 pl-8">
+                {sideCards.map((card) => (
+                  <Link
+                    key={card.href}
+                    href={card.href}
+                    onClick={() => setOpenTab(null)}
+                    className="group flex items-start gap-3 rounded-xl p-3 transition hover:bg-zinc-50"
+                  >
+                    <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#e6eef9] text-[#054997]">
+                      {card.icon}
+                    </span>
+                    <span className="flex-1">
+                      <span className="flex items-center justify-between gap-2">
+                        <span className="text-sm font-bold text-zinc-900">
+                          {card.title}
+                        </span>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-zinc-400 transition group-hover:translate-x-0.5 group-hover:text-[#054997]">
+                          <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                      </span>
+                      <span className="mt-0.5 block text-xs leading-5 text-zinc-500">
+                        {card.description}
+                      </span>
+                    </span>
+                  </Link>
+                ))}
+              </aside>
             </div>
           </div>
-        )}
+        </div>
       </header>
 
       {/* ═══════════ MOBILE MENU (fixed full-screen overlay) ═══════════ */}
-      {/*
-        Rendered OUTSIDE the <header> element so it never affects the header's
-        layout. `fixed inset-0` means it covers the viewport regardless of
-        scroll position. `pt-16` leaves room for the sticky header bar above.
-      */}
+      {/* Rendered OUTSIDE the <header> element so it never affects the header's layout. */}
       {mobileOpen && (
         <div className="fixed inset-0 z-40 overflow-y-auto bg-[#054997] pt-16 text-white lg:hidden">
           <div className="mx-auto max-w-7xl px-6 py-5">

@@ -145,13 +145,13 @@ export default function DeliveryPage() {
       </section>
 
       {/* Why choose */}
-      <section className="bg-white py-20 dark:bg-black lg:py-28">
+      <section className="bg-white py-20  lg:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
               Why deliver with OyeRide
             </h2>
-            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 dark:text-zinc-400">
+            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
               Fast, tracked, and handled with care — from pickup to drop-off.
             </p>
           </div>
@@ -160,15 +160,15 @@ export default function DeliveryPage() {
             {features.map((feature) => (
               <div
                 key={feature.title}
-                className="rounded-2xl border border-zinc-200 bg-white p-6 dark:border-zinc-800 dark:bg-zinc-950"
+                className="rounded-2xl border border-zinc-200 bg-white p-6"
               >
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#e6eef9] text-[#054997]">
                   {feature.icon}
                 </div>
-                <h3 className="mt-6 text-lg font-bold text-black dark:text-white">
+                <h3 className="mt-6 text-lg font-bold text-black ">
                   {feature.title}
                 </h3>
-                <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                <p className="mt-2 text-sm leading-6 text-zinc-600 ">
                   {feature.description}
                 </p>
               </div>
@@ -181,12 +181,12 @@ export default function DeliveryPage() {
 
       {/* Use cases */}
             {/* Use cases */}
-      <section className="bg-zinc-50 py-20 dark:bg-zinc-950 lg:py-28">
+      <section className="bg-zinc-50 py-20 lg:py-28">
         <div className="flex flex-col justify-center items-center mb-10">
-            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
                 What we deliver
               </h2>
-              <p className="mt-4 text-base font-medium leading-7 text-zinc-600 dark:text-zinc-400">
+              <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
                 If it fits on a motorcycle, we&apos;ll get it there.
               </p>
         </div>
@@ -209,12 +209,12 @@ export default function DeliveryPage() {
                 {useCases.map((item) => (
                   <div
                     key={item.title}
-                    className="rounded-2xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-900"
+                    className="rounded-2xl border border-zinc-200 bg-white p-5"
                   >
-                    <h3 className="text-base font-bold text-black dark:text-white">
+                    <h3 className="text-base font-bold text-black ">
                       {item.title}
                     </h3>
-                    <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                    <p className="mt-2 text-sm leading-6 text-zinc-600 ">
                       {item.description}
                     </p>
                   </div>
@@ -226,27 +226,27 @@ export default function DeliveryPage() {
       </section>
 
       {/* How it works */}
-      <section id="how" className="bg-white py-20 dark:bg-black lg:py-28">
+      <section id="how" className="bg-white py-20  lg:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
               How it works
             </h2>
-            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 dark:text-zinc-400">
+            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
               Four steps from your hands to theirs.
             </p>
           </div>
 
           <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {steps.map((step) => (
-              <div key={step.num} className="rounded-2xl bg-zinc-50 p-6 dark:bg-zinc-900">
-                <span className="text-3xl font-semibold text-[#054997] dark:text-[#7bb3e8]">
+              <div key={step.num} className="rounded-2xl bg-zinc-50 p-6">
+                <span className="text-3xl font-semibold text-[#054997] ">
                   {step.num}
                 </span>
-                <h3 className="mt-4 text-lg font-bold text-black dark:text-white">
+                <h3 className="mt-4 text-lg font-bold text-black ">
                   {step.title}
                 </h3>
-                <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                <p className="mt-2 text-sm leading-6 text-zinc-600 ">
                   {step.text}
                 </p>
               </div>
@@ -256,11 +256,11 @@ export default function DeliveryPage() {
       </section>
 
       {/* Safety */}
-      <section className="bg-zinc-50 py-20 dark:bg-zinc-950 lg:py-28">
+      <section className="bg-zinc-50 py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
             <div className="lg:sticky lg:top-24 lg:self-start">
-              <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+              <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
                 Your parcel is in good hands.
               </h2>
               <div className="relative mt-5 overflow-hidden rounded-3xl">
@@ -270,7 +270,7 @@ export default function DeliveryPage() {
                 className="aspect-[4/5] w-full h-[30rem] object-cover object-top"
               />
             </div>
-              <p className="mt-6 text-base leading-7 text-zinc-600 dark:text-zinc-400">
+              <p className="mt-6 text-base leading-7 text-zinc-600 ">
                 Every delivery is tracked, every rider is vetted, and every parcel is
                 handled like it&apos;s our own. Send with confidence.
               </p>
@@ -286,7 +286,7 @@ export default function DeliveryPage() {
               {safetyPoints.map((point) => (
                 <div
                   key={point.title}
-                  className="flex items-start gap-4 rounded-2xl border border-zinc-200 bg-white p-6 dark:border-zinc-800 dark:bg-zinc-900"
+                  className="flex items-start gap-4 rounded-2xl border border-zinc-200 bg-white p-6"
                 >
                   <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#054997] text-white">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
@@ -294,10 +294,10 @@ export default function DeliveryPage() {
                     </svg>
                   </span>
                   <div>
-                    <h3 className="text-base font-bold text-black dark:text-white">
+                    <h3 className="text-base font-bold text-black ">
                       {point.title}
                     </h3>
-                    <p className="mt-1.5 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                    <p className="mt-1.5 text-sm leading-6 text-zinc-600 ">
                       {point.text}
                     </p>
                   </div>

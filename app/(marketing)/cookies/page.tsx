@@ -123,9 +123,9 @@ export default function CookiesPage() {
       </section>
 
       {/* Intro */}
-      <section className="bg-white py-20 dark:bg-black lg:py-24">
+      <section className="bg-white py-20  lg:py-24">
         <div className="mx-auto max-w-3xl px-6">
-          <p className="text-base leading-8 text-zinc-700 dark:text-zinc-300 sm:text-lg sm:leading-9">
+          <p className="text-base leading-8 text-zinc-700  sm:text-lg sm:leading-9">
             This policy explains what cookies are, why OyeRide uses them, and
             how you can turn them off. It applies to the OyeRide mobile app and
             the website at oyeridegh.com.
@@ -134,15 +134,15 @@ export default function CookiesPage() {
       </section>
 
       {/* Sections */}
-      <section className="bg-white pb-20 dark:bg-black lg:pb-28">
+      <section className="bg-white pb-20  lg:pb-28">
         <div className="mx-auto max-w-3xl px-6">
           <div className="space-y-14">
             {sections.map((section) => (
               <div key={section.id} id={section.id} className="scroll-mt-24">
-                <h2 className="text-xl font-bold text-black sm:text-2xl dark:text-white">
+                <h2 className="text-xl font-bold text-black sm:text-2xl ">
                   {section.heading}
                 </h2>
-                <div className="mt-4 space-y-4 text-base leading-8 text-zinc-700 dark:text-zinc-300">
+                <div className="mt-4 space-y-4 text-base leading-8 text-zinc-700 ">
                   {section.body.map((paragraph, i) => (
                     <p key={i}>{paragraph}</p>
                   ))}
@@ -153,9 +153,9 @@ export default function CookiesPage() {
                     {section.bullets.map((bullet) => (
                       <li
                         key={bullet}
-                        className="flex items-start gap-3 text-base leading-7 text-zinc-700 dark:text-zinc-300"
+                        className="flex items-start gap-3 text-base leading-7 text-zinc-700 "
                       >
-                        <span className="mt-2 flex h-1.5 w-1.5 shrink-0 rounded-full bg-[#054997] dark:bg-[#7bb3e8]" />
+                        <span className="mt-2 flex h-1.5 w-1.5 shrink-0 rounded-full bg-[#054997]" />
                         <span>{bullet}</span>
                       </li>
                     ))}
@@ -164,34 +164,34 @@ export default function CookiesPage() {
 
                 {/* Cookie types table */}
                 {section.table && (
-                  <div className="mt-6 overflow-hidden rounded-2xl border border-zinc-200 dark:border-zinc-800">
+                  <div className="mt-6 overflow-hidden rounded-2xl border border-zinc-200">
                     <table className="w-full border-collapse text-left text-sm">
-                      <thead className="bg-zinc-50 dark:bg-zinc-900">
+                      <thead className="bg-zinc-50">
                         <tr>
-                          <th className="px-4 py-3 font-bold text-black dark:text-white">
+                          <th className="px-4 py-3 font-bold text-black ">
                             Type
                           </th>
-                          <th className="px-4 py-3 font-bold text-black dark:text-white">
+                          <th className="px-4 py-3 font-bold text-black ">
                             Purpose
                           </th>
-                          <th className="hidden px-4 py-3 font-bold text-black sm:table-cell dark:text-white">
+                          <th className="hidden px-4 py-3 font-bold text-black sm:table-cell ">
                             Example
                           </th>
                         </tr>
                       </thead>
-                      <tbody className="divide-y divide-zinc-200 dark:divide-zinc-800">
+                      <tbody className="divide-y divide-zinc-200">
                         {section.table.map((row) => (
                           <tr
                             key={row.type}
-                            className="bg-white align-top dark:bg-zinc-950"
+                            className="bg-white align-top"
                           >
-                            <td className="px-4 py-4 font-semibold text-black dark:text-white">
+                            <td className="px-4 py-4 font-semibold text-black ">
                               {row.type}
                             </td>
-                            <td className="px-4 py-4 leading-6 text-zinc-600 dark:text-zinc-400">
+                            <td className="px-4 py-4 leading-6 text-zinc-600 ">
                               {row.purpose}
                             </td>
-                            <td className="hidden px-4 py-4 leading-6 text-zinc-500 sm:table-cell dark:text-zinc-500">
+                            <td className="hidden px-4 py-4 leading-6 text-zinc-500 sm:table-cell ">
                               {row.example}
                             </td>
                           </tr>
@@ -207,31 +207,31 @@ export default function CookiesPage() {
       </section>
 
       {/* Related links */}
-      <section className="bg-zinc-50 py-16 dark:bg-zinc-950 lg:py-20">
+      <section className="bg-zinc-50 py-16 lg:py-20">
         <div className="mx-auto max-w-3xl px-6">
-          <h2 className="text-lg font-bold text-black dark:text-white">
+          <h2 className="text-lg font-bold text-black ">
             Related pages
           </h2>
           <div className="mt-6 grid gap-4 sm:grid-cols-2">
             <Link
               href="/privacy"
-              className="rounded-2xl border border-zinc-200 bg-white p-5 transition hover:border-[#054997] dark:border-zinc-800 dark:bg-zinc-900"
+              className="rounded-2xl border border-zinc-200 bg-white p-5 transition hover:border-[#054997]"
             >
-              <p className="text-sm font-bold text-black dark:text-white">
+              <p className="text-sm font-bold text-black ">
                 Privacy Center
               </p>
-              <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
+              <p className="mt-1 text-sm text-zinc-600 ">
                 All privacy notices by service
               </p>
             </Link>
             <Link
               href="/terms"
-              className="rounded-2xl border border-zinc-200 bg-white p-5 transition hover:border-[#054997] dark:border-zinc-800 dark:bg-zinc-900"
+              className="rounded-2xl border border-zinc-200 bg-white p-5 transition hover:border-[#054997]"
             >
-              <p className="text-sm font-bold text-black dark:text-white">
+              <p className="text-sm font-bold text-black ">
                 Terms of Service
               </p>
-              <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
+              <p className="mt-1 text-sm text-zinc-600 ">
                 The rules for using OyeRide
               </p>
             </Link>

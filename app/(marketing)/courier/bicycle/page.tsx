@@ -109,13 +109,13 @@ export default function BicycleCourierPage() {
       </section>
 
       {/* Benefits */}
-      <section className="bg-white py-20 dark:bg-black lg:py-28">
+      <section className="bg-white py-20  lg:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
               Why ride as a bicycle courier
             </h2>
-            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 dark:text-zinc-400">
+            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
               The simplest way to start earning on OyeRide.
             </p>
           </div>
@@ -124,15 +124,15 @@ export default function BicycleCourierPage() {
             {benefits.map((benefit) => (
               <div
                 key={benefit.title}
-                className="rounded-2xl border border-zinc-200 bg-white p-6 dark:border-zinc-800 dark:bg-zinc-950"
+                className="rounded-2xl border border-zinc-200 bg-white p-6"
               >
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#e6eef9] text-[#054997]">
                   {benefit.icon}
                 </div>
-                <h3 className="mt-6 text-lg font-bold text-black dark:text-white">
+                <h3 className="mt-6 text-lg font-bold text-black ">
                   {benefit.title}
                 </h3>
-                <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                <p className="mt-2 text-sm leading-6 text-zinc-600 ">
                   {benefit.description}
                 </p>
               </div>
@@ -142,27 +142,27 @@ export default function BicycleCourierPage() {
       </section>
 
       {/* How it works */}
-      <section className="bg-zinc-50 py-20 dark:bg-zinc-950 lg:py-28">
+      <section className="bg-zinc-50 py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
               How to get started
             </h2>
-            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 dark:text-zinc-400">
+            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
               Four steps from sign-up to your first delivery.
             </p>
           </div>
 
           <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {steps.map((step) => (
-              <div key={step.num} className="rounded-2xl bg-white p-6 dark:bg-zinc-900">
-                <span className="text-3xl font-semibold text-[#054997] dark:text-[#7bb3e8]">
+              <div key={step.num} className="rounded-2xl bg-white p-6">
+                <span className="text-3xl font-semibold text-[#054997] ">
                   {step.num}
                 </span>
-                <h3 className="mt-4 text-lg font-bold text-black dark:text-white">
+                <h3 className="mt-4 text-lg font-bold text-black ">
                   {step.title}
                 </h3>
-                <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                <p className="mt-2 text-sm leading-6 text-zinc-600 ">
                   {step.text}
                 </p>
               </div>
@@ -172,13 +172,13 @@ export default function BicycleCourierPage() {
       </section>
 
       {/* Requirements */}
-      <section id="requirements" className="scroll-mt-24 bg-white py-20 dark:bg-black lg:py-28">
+      <section id="requirements" className="scroll-mt-24 bg-white py-20  lg:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex flex-col items-center mb-10 text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
               What you need
             </h2>
-            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 dark:text-zinc-400">
+            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
               You probably already have most of this.
             </p>
           </div>
@@ -197,14 +197,14 @@ export default function BicycleCourierPage() {
                 {requirements.map((req) => (
                   <li
                     key={req}
-                    className="flex items-start gap-3 rounded-2xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-950"
+                    className="flex items-start gap-3 rounded-2xl border border-zinc-200 bg-white p-5"
                   >
                     <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#054997] text-white">
                       <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
                         <path d="m5 13 4 4L19 7" />
                       </svg>
                     </span>
-                    <span className="text-sm leading-6 text-zinc-700 dark:text-zinc-300">
+                    <span className="text-sm leading-6 text-zinc-700 ">
                       {req}
                     </span>
                   </li>

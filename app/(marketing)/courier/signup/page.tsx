@@ -95,10 +95,10 @@ export default function CourierSignupPage() {
       </section>
 
       {/* Callout */}
-      <section className="bg-white py-20 dark:bg-black lg:py-24">
+      <section className="bg-white py-20  lg:py-24">
         <div className="mx-auto max-w-3xl px-6">
-          <div className="rounded-3xl border border-[#054997]/20 bg-[#e6eef9]/50 p-8 text-center dark:border-[#7bb3e8]/20 dark:bg-[#0a2b56]/40">
-            <p className="text-base leading-7 text-[#054997] dark:text-[#7bb3e8]">
+          <div className="rounded-3xl border border-[#054997]/20 bg-[#e6eef9]/50 p-8 text-center">
+            <p className="text-base leading-7 text-[#054997] ">
               <strong>Choose your vehicle in the app.</strong> You&apos;ll pick
               Motor Courier or Bicycle Courier when you sign up, and the app
               will ask for the right documents for your choice.
@@ -108,13 +108,13 @@ export default function CourierSignupPage() {
       </section>
 
       {/* Steps */}
-      <section id="steps" className="scroll-mt-24 bg-white pb-20 dark:bg-black lg:pb-28">
+      <section id="steps" className="scroll-mt-24 bg-white pb-20  lg:pb-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
               How sign-up works
             </h2>
-            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 dark:text-zinc-400">
+            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
               Four steps from download to your first delivery.
             </p>
           </div>
@@ -123,15 +123,15 @@ export default function CourierSignupPage() {
             {steps.map((step) => (
               <div
                 key={step.num}
-                className="rounded-2xl bg-zinc-50 p-6 dark:bg-zinc-900"
+                className="rounded-2xl bg-zinc-50 p-6"
               >
-                <span className="text-3xl font-semibold text-[#054997] dark:text-[#7bb3e8]">
+                <span className="text-3xl font-semibold text-[#054997] ">
                   {step.num}
                 </span>
-                <h3 className="mt-4 text-lg font-bold text-black dark:text-white">
+                <h3 className="mt-4 text-lg font-bold text-black ">
                   {step.title}
                 </h3>
-                <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                <p className="mt-2 text-sm leading-6 text-zinc-600 ">
                   {step.text}
                 </p>
               </div>
@@ -141,13 +141,13 @@ export default function CourierSignupPage() {
       </section>
 
       {/* Two checklists */}
-      <section className="bg-zinc-50 py-20 dark:bg-zinc-950 lg:py-28">
+      <section className="bg-zinc-50 py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex flex-col items-center mb-10 text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
               Have these ready
             </h2>
-            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 dark:text-zinc-400">
+            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
               Pick your vehicle below to see exactly what you&apos;ll need.
             </p>
           </div>
@@ -163,15 +163,15 @@ export default function CourierSignupPage() {
 
             <div className="space-y-6">
               {/* Motor courier */}
-              <div className="rounded-2xl border border-zinc-200 bg-white p-6 dark:border-zinc-800 dark:bg-zinc-900">
-                <h3 className="text-base font-bold text-black dark:text-white">
+              <div className="rounded-2xl border border-zinc-200 bg-white p-6">
+                <h3 className="text-base font-bold text-black ">
                   Motor courier
                 </h3>
                 <ul className="mt-4 space-y-2.5">
                   {motorChecklist.map((item) => (
                     <li
                       key={item}
-                      className="flex items-start gap-2.5 text-sm text-zinc-700 dark:text-zinc-300"
+                      className="flex items-start gap-2.5 text-sm text-zinc-700 "
                     >
                       <span className="mt-1 flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-[#054997] text-white">
                         <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
@@ -185,15 +185,15 @@ export default function CourierSignupPage() {
               </div>
 
               {/* Bicycle courier */}
-              <div className="rounded-2xl border border-zinc-200 bg-white p-6 dark:border-zinc-800 dark:bg-zinc-900">
-                <h3 className="text-base font-bold text-black dark:text-white">
+              <div className="rounded-2xl border border-zinc-200 bg-white p-6">
+                <h3 className="text-base font-bold text-black ">
                   Bicycle courier
                 </h3>
                 <ul className="mt-4 space-y-2.5">
                   {bicycleChecklist.map((item) => (
                     <li
                       key={item}
-                      className="flex items-start gap-2.5 text-sm text-zinc-700 dark:text-zinc-300"
+                      className="flex items-start gap-2.5 text-sm text-zinc-700 "
                     >
                       <span className="mt-1 flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-[#054997] text-white">
                         <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">

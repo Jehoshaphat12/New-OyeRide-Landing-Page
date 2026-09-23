@@ -61,15 +61,15 @@ export default async function PrivacyNoticePage({ params }: Props) {
       </section>
 
       {/* Notice content */}
-      <section className="bg-white py-20 dark:bg-black lg:py-24">
+      <section className="bg-white py-20  lg:py-24">
         <div className="mx-auto max-w-3xl px-6">
           <div className="space-y-14">
             {notice.sections.map((section, i) => (
               <div key={i}>
-                <h2 className="text-xl font-bold text-black sm:text-2xl dark:text-white">
+                <h2 className="text-xl font-bold text-black sm:text-2xl ">
                   {section.heading}
                 </h2>
-                <div className="mt-4 space-y-4 text-base leading-8 text-zinc-700 dark:text-zinc-300">
+                <div className="mt-4 space-y-4 text-base leading-8 text-zinc-700 ">
                   {section.body.map((paragraph, j) => (
                     <p key={j}>{paragraph}</p>
                   ))}
@@ -79,22 +79,22 @@ export default async function PrivacyNoticePage({ params }: Props) {
           </div>
 
           {/* Contact block */}
-          <div className="mt-16 rounded-2xl border border-zinc-200 bg-zinc-50 p-6 dark:border-zinc-800 dark:bg-zinc-900">
-            <h3 className="text-base font-bold text-black dark:text-white">
+          <div className="mt-16 rounded-2xl border border-zinc-200 bg-zinc-50 p-6">
+            <h3 className="text-base font-bold text-black ">
               Questions about this notice?
             </h3>
-            <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+            <p className="mt-2 text-sm leading-6 text-zinc-600 ">
               Email us at{" "}
               <a
                 href="mailto:hello@oyeridegh.com?subject=Privacy%20Question"
-                className="font-semibold text-[#054997] underline dark:text-[#7bb3e8]"
+                className="font-semibold text-[#054997] underline "
               >
                 hello@oyeridegh.com
               </a>{" "}
               or visit the{" "}
               <Link
                 href="/privacy/data-request"
-                className="font-semibold text-[#054997] underline dark:text-[#7bb3e8]"
+                className="font-semibold text-[#054997] underline "
               >
                 Data Rights Request portal
               </Link>{" "}
@@ -105,9 +105,9 @@ export default async function PrivacyNoticePage({ params }: Props) {
       </section>
 
       {/* Related notices */}
-      <section className="bg-zinc-50 py-16 dark:bg-zinc-950 lg:py-20">
+      <section className="bg-zinc-50 py-16 lg:py-20">
         <div className="mx-auto max-w-3xl px-6">
-          <h2 className="text-lg font-bold text-black dark:text-white">
+          <h2 className="text-lg font-bold text-black ">
             Other privacy notices
           </h2>
           <div className="mt-6 grid gap-3 sm:grid-cols-2">
@@ -118,12 +118,12 @@ export default async function PrivacyNoticePage({ params }: Props) {
                 <Link
                   key={n.slug}
                   href={`/privacy/${n.slug}`}
-                  className="rounded-2xl border border-zinc-200 bg-white p-4 transition hover:border-[#054997] dark:border-zinc-800 dark:bg-zinc-900"
+                  className="rounded-2xl border border-zinc-200 bg-white p-4 transition hover:border-[#054997]"
                 >
-                  <p className="text-sm font-bold text-black dark:text-white">
+                  <p className="text-sm font-bold text-black ">
                     {n.title}
                   </p>
-                  <p className="mt-1 text-xs text-zinc-500 dark:text-zinc-400">
+                  <p className="mt-1 text-xs text-zinc-500 ">
                     {n.category}
                   </p>
                 </Link>

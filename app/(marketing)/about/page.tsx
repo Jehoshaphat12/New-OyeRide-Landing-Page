@@ -79,7 +79,7 @@ export default function AboutPage() {
 
       {/* Story */}
             {/* Story */}
-      <section className="bg-white py-20 dark:bg-black lg:py-28">
+      <section className="bg-white py-20  lg:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
             {/* Image */}
@@ -93,10 +93,10 @@ export default function AboutPage() {
 
             {/* Copy */}
             <div>
-              <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+              <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
                 Our story
               </h2>
-              <div className="mt-8 space-y-6 text-base leading-8 text-zinc-700 dark:text-zinc-300 sm:text-lg sm:leading-9">
+              <div className="mt-8 space-y-6 text-base leading-8 text-zinc-700  sm:text-lg sm:leading-9">
                 <p>
                   Kasoa moves fast. But for too long, getting around has meant long waits,
                   unpredictable prices, and the same old frustrations — no matter whether you
@@ -119,13 +119,13 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="bg-zinc-50 py-20 dark:bg-zinc-950 lg:py-28">
+      <section className="bg-zinc-50 py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
               What we stand for
             </h2>
-            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 dark:text-zinc-400">
+            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
               Four principles that guide every decision we make.
             </p>
           </div>
@@ -134,15 +134,15 @@ export default function AboutPage() {
             {values.map((value) => (
               <div
                 key={value.title}
-                className="rounded-2xl border border-zinc-200 bg-white p-6 dark:border-zinc-800 dark:bg-zinc-900"
+                className="rounded-2xl border border-zinc-200 bg-white p-6"
               >
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#e6eef9] text-[#054997]">
                   {value.icon}
                 </div>
-                <h3 className="mt-6 text-lg font-bold text-black dark:text-white">
+                <h3 className="mt-6 text-lg font-bold text-black ">
                   {value.title}
                 </h3>
-                <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                <p className="mt-2 text-sm leading-6 text-zinc-600 ">
                   {value.description}
                 </p>
               </div>
@@ -152,15 +152,15 @@ export default function AboutPage() {
       </section>
 
       {/* Stats band */}
-      <section className="bg-white py-16 dark:bg-black lg:py-20">
+      <section className="bg-white py-16  lg:py-20">
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid grid-cols-2 gap-8 md:grid-cols-4 md:gap-6">
             {stats.map((stat) => (
               <div key={stat.label} className="text-center">
-                <div className="text-3xl font-semibold tracking-tight text-[#054997] sm:text-4xl lg:text-5xl dark:text-[#7bb3e8]">
+                <div className="text-3xl font-semibold tracking-tight text-[#054997] sm:text-4xl lg:text-5xl">
                   {stat.value}
                 </div>
-                <div className="mt-2 text-sm font-medium text-zinc-600 dark:text-zinc-400">
+                <div className="mt-2 text-sm font-medium text-zinc-600 ">
                   {stat.label}
                 </div>
               </div>
@@ -170,12 +170,12 @@ export default function AboutPage() {
       </section>
 
       {/* Closing message */}
-      <section className="bg-white py-20 dark:bg-black lg:py-28">
+      <section className="bg-white py-20  lg:py-28">
         <div className="mx-auto max-w-3xl px-6 text-center">
-          <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+          <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
             We&apos;re hiring.
           </h2>
-          <p className="mt-6 text-base leading-7 text-zinc-600 dark:text-zinc-400 sm:text-lg">
+          <p className="mt-6 text-base leading-7 text-zinc-600  sm:text-lg">
             We&apos;re a small, tight team based in Kasoa. If you want to help build the
             future of transport in Ghana, we&apos;d love to hear from you.
           </p>

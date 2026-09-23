@@ -9,7 +9,7 @@ interface Props {
 
 export function OrderRide(Props: Props) {
   return (
-    <section className="bg-white pb-20 dark:bg-black lg:pb-28">
+    <section className="bg-white pb-20  lg:pb-28">
       <div className="mx-auto max-w-7xl px-6">
         <div className="relative overflow-hidden rounded-3xl">
           {/* Image — top on mobile, full background on desktop */}

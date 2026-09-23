@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { OrderRide } from "@/components/marketing/orderRide";
 
 export const metadata: Metadata = {
   title: "Sign Up as a Rider — OyeRide",
@@ -79,7 +80,7 @@ export default function RiderSignupPage() {
 
         <div className="w-full">
           <img
-            src="/signupRider.png"
+            src="/rider01.png"
             alt="Rider signing up in the OyeRide app"
             className="h-[400px] w-full object-cover sm:h-[500px] lg:h-[640px]"
           />
@@ -87,10 +88,10 @@ export default function RiderSignupPage() {
       </section>
 
       {/* Callout */}
-      <section className="bg-white py-20 dark:bg-black lg:py-24">
+      <section className="bg-white py-20  lg:py-24">
         <div className="mx-auto max-w-3xl px-6">
-          <div className="rounded-3xl border border-[#054997]/20 bg-[#e6eef9]/50 p-8 text-center dark:border-[#7bb3e8]/20 dark:bg-[#0a2b56]/40">
-            <p className="text-base leading-7 text-[#054997] dark:text-[#7bb3e8]">
+          <div className="rounded-3xl border border-[#054997]/20 bg-[#e6eef9]/50 p-8 text-center">
+            <p className="text-base leading-7 text-[#054997] ">
               <strong>Why in the app?</strong> Because we verify your identity
               in real time — you photograph your ID and license directly in the
               app so we can confirm everything quickly and securely.
@@ -99,14 +100,16 @@ export default function RiderSignupPage() {
         </div>
       </section>
 
+      <OrderRide title="Sign up today!" imageSrc="/RiderImg4.png" />
+
       {/* Steps */}
-      <section id="steps" className="scroll-mt-24 bg-white pb-20 dark:bg-black lg:pb-28">
+      <section id="steps" className="scroll-mt-24 bg-white pb-20  lg:pb-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
               How sign-up works
             </h2>
-            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 dark:text-zinc-400">
+            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
               Four steps from download to your first trip.
             </p>
           </div>
@@ -115,15 +118,15 @@ export default function RiderSignupPage() {
             {steps.map((step) => (
               <div
                 key={step.num}
-                className="rounded-2xl bg-zinc-50 p-6 dark:bg-zinc-900"
+                className="rounded-2xl bg-zinc-50 p-6"
               >
-                <span className="text-3xl font-semibold text-[#054997] dark:text-[#7bb3e8]">
+                <span className="text-3xl font-semibold text-[#054997] ">
                   {step.num}
                 </span>
-                <h3 className="mt-4 text-lg font-bold text-black dark:text-white">
+                <h3 className="mt-4 text-lg font-bold text-black ">
                   {step.title}
                 </h3>
-                <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                <p className="mt-2 text-sm leading-6 text-zinc-600 ">
                   {step.text}
                 </p>
               </div>
@@ -133,13 +136,13 @@ export default function RiderSignupPage() {
       </section>
 
       {/* Checklist */}
-      <section className="bg-zinc-50 py-20 dark:bg-zinc-950 lg:py-28">
+      <section className="bg-zinc-50 py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex flex-col items-center mb-10 text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
               Have these ready
             </h2>
-            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 dark:text-zinc-400">
+            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
               Sign-up takes about 10 minutes if you&apos;re prepared.
             </p>
           </div>
@@ -147,7 +150,7 @@ export default function RiderSignupPage() {
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
             <div className="relative overflow-hidden rounded-3xl">
               <img
-                src="/signupDocuments.png"
+                src="/RiderImg2.jpg"
                 alt="Documents required to sign up"
                 className="aspect-[4/5] w-full object-cover"
               />
@@ -156,16 +159,16 @@ export default function RiderSignupPage() {
             <div>
               <ul className="grid gap-4 sm:grid-cols-1">
                 {checklist.map((item) => (
-                  <li
+                    <li
                     key={item}
-                    className="flex items-start gap-3 rounded-2xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-900"
-                  >
+                    className="flex items-start gap-3 rounded-2xl border border-zinc-200 bg-white p-5"
+                    >
                     <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#054997] text-white">
                       <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
                         <path d="m5 13 4 4L19 7" />
                       </svg>
                     </span>
-                    <span className="text-sm leading-6 text-zinc-700 dark:text-zinc-300">
+                    <span className="text-sm leading-6 text-zinc-700 ">
                       {item}
                     </span>
                   </li>
@@ -175,6 +178,8 @@ export default function RiderSignupPage() {
           </div>
         </div>
       </section>
+
+      <OrderRide title="Sign up today!" imageSrc="/rider01.png" PushAside={true}/>
 
       {/* Final CTA */}
       <section className="bg-[#000000] py-20 text-white lg:py-28">
@@ -188,7 +193,7 @@ export default function RiderSignupPage() {
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
               href="/download"
-              className="inline-flex w-full justify-center rounded-full bg-white px-8 py-4 text-base font-semibold text-[#054997] transition hover:bg-zinc-100 sm:w-auto"
+              className="inline-flex w-full justify-center rounded-full bg-white px-8 py-4 text-base font-semibold text-[#000000] transition hover:bg-zinc-100 sm:w-auto"
             >
               Download the app
             </Link>

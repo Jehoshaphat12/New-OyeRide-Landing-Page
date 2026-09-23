@@ -74,13 +74,13 @@ Thank you.
       </section>
 
       {/* Request type selection */}
-      <section className="bg-white py-20 dark:bg-black lg:py-24">
+      <section className="bg-white py-20  lg:py-24">
         <div className="mx-auto max-w-4xl px-6">
           <div className="text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl dark:text-white">
+            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl ">
               What would you like to do?
             </h2>
-            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 dark:text-zinc-400">
+            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
               Choose one option to continue.
             </p>
           </div>
@@ -93,21 +93,21 @@ Thank you.
                   key={type.id}
                   onClick={() => setSelectedType(type.id)}
                   className={`group flex flex-col rounded-2xl border-2 p-6 text-left transition ${
-                    isSelected
-                      ? "border-[#054997] bg-[#054997]/5 dark:bg-[#054997]/15"
-                      : "border-zinc-200 bg-white hover:border-[#054997]/50 dark:border-zinc-800 dark:bg-zinc-950"
-                  }`}
+ isSelected
+ ? "border-[#054997] bg-[#054997]/5 "
+ : "border-zinc-200 bg-white hover:border-[#054997]/50 "
+ }`}
                 >
                   <div className="flex items-center justify-between">
-                    <h3 className="text-lg font-bold text-black dark:text-white">
+                    <h3 className="text-lg font-bold text-black ">
                       {type.label}
                     </h3>
                     <span
                       className={`flex h-6 w-6 items-center justify-center rounded-full border-2 transition ${
-                        isSelected
-                          ? "border-[#054997] bg-[#054997] text-white"
-                          : "border-zinc-300 dark:border-zinc-700"
-                      }`}
+ isSelected
+ ? "border-[#054997] bg-[#054997] text-white"
+ : "border-zinc-300 "
+ }`}
                     >
                       {isSelected && (
                         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round">
@@ -116,7 +116,7 @@ Thank you.
                       )}
                     </span>
                   </div>
-                  <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                  <p className="mt-2 text-sm leading-6 text-zinc-600 ">
                     {type.description}
                   </p>
                 </button>
@@ -130,14 +130,14 @@ Thank you.
               href={mailto}
               aria-disabled={!selectedType}
               className={`inline-flex w-full items-center justify-center rounded-full px-8 py-4 text-base font-semibold transition sm:w-auto ${
-                selectedType
-                  ? "bg-[#054997] text-white hover:bg-[#04356f]"
-                  : "pointer-events-none bg-zinc-200 text-zinc-400 dark:bg-zinc-800 dark:text-zinc-600"
-              }`}
+ selectedType
+ ? "bg-[#054997] text-white hover:bg-[#04356f]"
+ : "pointer-events-none bg-zinc-200 text-zinc-400 "
+ }`}
             >
               Continue to verification
             </a>
-            <p className="max-w-md text-center text-xs leading-6 text-zinc-500 dark:text-zinc-400">
+            <p className="max-w-md text-center text-xs leading-6 text-zinc-500 ">
               This opens your email app with a pre-filled request. Our team will
               verify your identity before processing.
             </p>
@@ -146,10 +146,10 @@ Thank you.
       </section>
 
       {/* Info */}
-      <section className="bg-zinc-50 py-20 dark:bg-zinc-950 lg:py-24">
+      <section className="bg-zinc-50 py-20 lg:py-24">
         <div className="mx-auto max-w-3xl px-6">
-          <div className="rounded-2xl border border-zinc-200 bg-white p-6 dark:border-zinc-800 dark:bg-zinc-900">
-            <h3 className="text-base font-bold text-black dark:text-white">
+          <div className="rounded-2xl border border-zinc-200 bg-white p-6">
+            <h3 className="text-base font-bold text-black ">
               What happens after you submit
             </h3>
             <ol className="mt-4 space-y-3">
@@ -162,7 +162,7 @@ Thank you.
                   <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#054997] text-xs font-bold text-white">
                     {i + 1}
                   </span>
-                  <span className="text-sm leading-6 text-zinc-700 dark:text-zinc-300">
+                  <span className="text-sm leading-6 text-zinc-700 ">
                     {step}
                   </span>
                 </li>

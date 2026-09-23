@@ -92,18 +92,18 @@ const faqs = [
 
 function FaqItem({ question, answer }: { question: string; answer: string }) {
   return (
-    <details className="group overflow-hidden rounded-2xl border border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-900">
+    <details className="group overflow-hidden rounded-2xl border border-zinc-200 bg-white">
       <summary className="flex cursor-pointer list-none items-center justify-between gap-6 px-6 py-5 text-left [&::-webkit-details-marker]:hidden">
-        <span className="text-base font-semibold text-black dark:text-white">
+        <span className="text-base font-semibold text-black ">
           {question}
         </span>
-        <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#e6eef9] text-[#054997] transition-transform group-open:rotate-45 dark:bg-[#0a2b56] dark:text-[#7bb3e8]">
+        <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#e6eef9] text-[#054997] transition-transform group-open:rotate-45">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
             <path d="M12 5v14M5 12h14" />
           </svg>
         </span>
       </summary>
-      <div className="px-6 pb-6 text-sm leading-7 text-zinc-600 dark:text-zinc-400">
+      <div className="px-6 pb-6 text-sm leading-7 text-zinc-600 ">
         {answer}
       </div>
     </details>
@@ -167,16 +167,16 @@ Thank you.
       </section>
 
       {/* Intro */}
-      <section className="bg-white py-20 dark:bg-black lg:py-24">
+      <section className="bg-white py-20  lg:py-24">
         <div className="mx-auto max-w-3xl px-6">
-          <p className="text-base leading-8 text-zinc-700 dark:text-zinc-300 sm:text-lg sm:leading-9">
+          <p className="text-base leading-8 text-zinc-700  sm:text-lg sm:leading-9">
             Deleting your OyeRide account is permanent. Once processed, your
             trip history, profile, and all linked data are gone — you can&apos;t
             undo it. If you&apos;re only looking for a copy of your data or to
             fix something, use our{" "}
             <Link
               href="/privacy/data-request"
-              className="font-semibold text-[#054997] underline dark:text-[#7bb3e8]"
+              className="font-semibold text-[#054997] underline "
             >
               Data Rights Request portal
             </Link>{" "}
@@ -186,30 +186,30 @@ Thank you.
       </section>
 
       {/* Two ways to delete */}
-      <section className="bg-white pb-20 dark:bg-black lg:pb-28">
+      <section className="bg-white pb-20  lg:pb-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
               Two ways to delete
             </h2>
-            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 dark:text-zinc-400">
+            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
               Pick whichever suits your situation.
             </p>
           </div>
 
           <div className="mt-16 grid gap-6 md:grid-cols-2">
             {/* In-app */}
-            <div className="flex flex-col rounded-2xl border border-zinc-200 bg-white p-8 dark:border-zinc-800 dark:bg-zinc-950">
+            <div className="flex flex-col rounded-2xl border border-zinc-200 bg-white p-8">
               <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#e6eef9] text-[#054997]">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
                   <rect x="5" y="2" width="14" height="20" rx="2" />
                   <path d="M12 18h.01" />
                 </svg>
               </span>
-              <h3 className="mt-6 text-xl font-bold text-black dark:text-white">
+              <h3 className="mt-6 text-xl font-bold text-black ">
                 Delete from the app
               </h3>
-              <p className="mt-3 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+              <p className="mt-3 text-sm leading-6 text-zinc-600 ">
                 The fastest option if you still have the OyeRide app installed.
               </p>
               <ol className="mt-6 space-y-3">
@@ -222,7 +222,7 @@ Thank you.
                     <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#054997] text-xs font-bold text-white">
                       {i + 1}
                     </span>
-                    <span className="text-sm leading-6 text-zinc-700 dark:text-zinc-300">
+                    <span className="text-sm leading-6 text-zinc-700 ">
                       {step}
                     </span>
                   </li>
@@ -231,17 +231,17 @@ Thank you.
             </div>
 
             {/* Email */}
-            <div className="flex flex-col rounded-2xl border-2 border-[#054997]/30 bg-white p-8 dark:border-[#054997]/50 dark:bg-zinc-950">
+            <div className="flex flex-col rounded-2xl border-2 border-[#054997]/30 bg-white p-8">
               <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#e6eef9] text-[#054997]">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
                   <rect x="2" y="4" width="20" height="16" rx="2" />
                   <path d="m2 7 10 6 10-6" />
                 </svg>
               </span>
-              <h3 className="mt-6 text-xl font-bold text-black dark:text-white">
+              <h3 className="mt-6 text-xl font-bold text-black ">
                 Request via email
               </h3>
-              <p className="mt-3 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+              <p className="mt-3 text-sm leading-6 text-zinc-600 ">
                 Don&apos;t have the app anymore? Send us a request from the
                 email address linked to your OyeRide account.
               </p>
@@ -256,7 +256,7 @@ Thank you.
                   </svg>
                   Send deletion email
                 </a>
-                <p className="mt-3 text-center text-xs text-zinc-500 dark:text-zinc-400">
+                <p className="mt-3 text-center text-xs text-zinc-500 ">
                   Opens your email app with a pre-filled message
                 </p>
               </div>
@@ -266,13 +266,13 @@ Thank you.
       </section>
 
       {/* What gets deleted */}
-      <section id="what" className="scroll-mt-24 bg-zinc-50 py-20 dark:bg-zinc-950 lg:py-28">
+      <section id="what" className="scroll-mt-24 bg-zinc-50 py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
               What gets deleted
             </h2>
-            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 dark:text-zinc-400">
+            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
               Everything below is removed from our systems within 7 days.
             </p>
           </div>
@@ -281,15 +281,15 @@ Thank you.
             {deleteItems.map((item) => (
               <div
                 key={item.title}
-                className="rounded-2xl border border-zinc-200 bg-white p-6 dark:border-zinc-800 dark:bg-zinc-900"
+                className="rounded-2xl border border-zinc-200 bg-white p-6"
               >
-                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-red-50 text-red-500 dark:bg-red-950/40 dark:text-red-400">
+                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-red-50 text-red-500">
                   {item.icon}
                 </span>
-                <h3 className="mt-5 text-base font-bold text-black dark:text-white">
+                <h3 className="mt-5 text-base font-bold text-black ">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                <p className="mt-2 text-sm leading-6 text-zinc-600 ">
                   {item.description}
                 </p>
               </div>
@@ -297,18 +297,18 @@ Thank you.
           </div>
 
           {/* What may be retained */}
-          <div className="mx-auto mt-10 max-w-3xl rounded-2xl border border-amber-200 bg-amber-50 p-6 dark:border-amber-900/50 dark:bg-amber-950/30">
+          <div className="mx-auto mt-10 max-w-3xl rounded-2xl border border-amber-200 bg-amber-50 p-6">
             <div className="flex items-start gap-4">
-              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-amber-100 text-amber-600 dark:bg-amber-900/40 dark:text-amber-400">
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-amber-100 text-amber-600">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M12 8v4M12 16h.01M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z" />
                 </svg>
               </span>
               <div>
-                <h3 className="text-sm font-bold text-amber-900 dark:text-amber-200">
+                <h3 className="text-sm font-bold text-amber-900 ">
                   What may be retained
                 </h3>
-                <ul className="mt-2 space-y-1.5 text-sm leading-6 text-amber-800 dark:text-amber-300/90">
+                <ul className="mt-2 space-y-1.5 text-sm leading-6 text-amber-800 ">
                   <li>
                     • <strong>Legal dispute records</strong> — if your account
                     is involved in an ongoing investigation, data may be
@@ -326,13 +326,13 @@ Thank you.
       </section>
 
       {/* Timeline */}
-      <section className="bg-white py-20 dark:bg-black lg:py-28">
+      <section className="bg-white py-20  lg:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
               What happens next
             </h2>
-            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 dark:text-zinc-400">
+            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
               Three steps from request to confirmation.
             </p>
           </div>
@@ -341,15 +341,15 @@ Thank you.
             {timeline.map((step) => (
               <div
                 key={step.num}
-                className="rounded-2xl border border-zinc-200 bg-white p-6 dark:border-zinc-800 dark:bg-zinc-950"
+                className="rounded-2xl border border-zinc-200 bg-white p-6"
               >
-                <span className="text-3xl font-semibold text-[#054997] dark:text-[#7bb3e8]">
+                <span className="text-3xl font-semibold text-[#054997] ">
                   {step.num}
                 </span>
-                <h3 className="mt-4 text-base font-bold text-black dark:text-white">
+                <h3 className="mt-4 text-base font-bold text-black ">
                   {step.title}
                 </h3>
-                <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                <p className="mt-2 text-sm leading-6 text-zinc-600 ">
                   {step.text}
                 </p>
               </div>
@@ -359,13 +359,13 @@ Thank you.
       </section>
 
       {/* FAQ */}
-      <section className="bg-zinc-50 py-20 dark:bg-zinc-950 lg:py-28">
+      <section className="bg-zinc-50 py-20 lg:py-28">
         <div className="mx-auto max-w-3xl px-6">
           <div className="text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
               Common questions
             </h2>
-            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 dark:text-zinc-400">
+            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
               What people ask before deleting.
             </p>
           </div>

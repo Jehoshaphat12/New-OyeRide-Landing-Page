@@ -62,25 +62,25 @@ export default function ContactPage() {
       </section>
 
       {/* Contact methods */}
-      <section className="bg-white py-20 dark:bg-black lg:py-28">
+      <section className="bg-white py-20  lg:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid gap-6 md:grid-cols-3">
             {contactMethods.map((method) => (
               <a
                 key={method.title}
                 href={method.href}
-                className="group rounded-2xl border border-zinc-200 bg-white p-6 transition hover:border-[#054997] hover:shadow-md dark:border-zinc-800 dark:bg-zinc-950"
+                className="group rounded-2xl border border-zinc-200 bg-white p-6 transition hover:border-[#054997] hover:shadow-md"
               >
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#e6eef9] text-[#054997]">
                   {method.icon}
                 </div>
-                <h3 className="mt-6 text-lg font-bold text-black dark:text-white">
+                <h3 className="mt-6 text-lg font-bold text-black ">
                   {method.title}
                 </h3>
-                <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                <p className="mt-2 text-sm leading-6 text-zinc-600 ">
                   {method.description}
                 </p>
-                <p className="mt-4 text-sm font-semibold text-[#054997] dark:text-[#7bb3e8]">
+                <p className="mt-4 text-sm font-semibold text-[#054997] ">
                   {method.value}
                 </p>
               </a>
@@ -90,15 +90,15 @@ export default function ContactPage() {
       </section>
 
       {/* Form + info */}
-      <section className="bg-zinc-50 py-20 dark:bg-zinc-950 lg:py-28">
+      <section className="bg-zinc-50 py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid gap-12 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)] lg:gap-16">
             {/* Form */}
             <div>
-              <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl dark:text-white">
+              <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl ">
                 Send us a message
               </h2>
-              <p className="mt-4 text-base leading-7 text-zinc-600 dark:text-zinc-400">
+              <p className="mt-4 text-base leading-7 text-zinc-600 ">
                 Fill in the form below and we&apos;ll get back to you within 24 hours.
               </p>
 
@@ -109,26 +109,26 @@ export default function ContactPage() {
 
             {/* Side info */}
             <aside className="lg:pt-24">
-              <div className="rounded-2xl border border-zinc-200 bg-white p-6 dark:border-zinc-800 dark:bg-zinc-900">
-                <h3 className="text-base font-bold text-black dark:text-white">
+              <div className="rounded-2xl border border-zinc-200 bg-white p-6">
+                <h3 className="text-base font-bold text-black ">
                   Before you write
                 </h3>
-                <p className="mt-3 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                <p className="mt-3 text-sm leading-6 text-zinc-600 ">
                   Many common questions are already answered in our FAQ.
                 </p>
                 <Link
                   href="/#faq"
-                  className="mt-4 inline-flex text-sm font-semibold text-[#054997] hover:underline dark:text-[#7bb3e8]"
+                  className="mt-4 inline-flex text-sm font-semibold text-[#054997] hover:underline "
                 >
                   Check the FAQ →
                 </Link>
               </div>
 
-              <div className="mt-6 rounded-2xl border border-zinc-200 bg-white p-6 dark:border-zinc-800 dark:bg-zinc-900">
-                <h3 className="text-base font-bold text-black dark:text-white">
+              <div className="mt-6 rounded-2xl border border-zinc-200 bg-white p-6">
+                <h3 className="text-base font-bold text-black ">
                   For urgent issues
                 </h3>
-                <p className="mt-3 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                <p className="mt-3 text-sm leading-6 text-zinc-600 ">
                   If you need help during a trip, use the in-app support button for the
                   fastest response.
                 </p>

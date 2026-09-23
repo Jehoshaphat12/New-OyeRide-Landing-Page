@@ -137,13 +137,13 @@ export default function PressPage() {
       </section>
 
       {/* Company facts */}
-      <section className="bg-white py-20 dark:bg-black lg:py-28">
+      <section className="bg-white py-20  lg:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
               Company at a glance
             </h2>
-            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 dark:text-zinc-400">
+            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
               The core facts for your story.
             </p>
           </div>
@@ -152,23 +152,23 @@ export default function PressPage() {
             {facts.map((fact) => (
               <div
                 key={fact.label}
-                className="rounded-2xl border border-zinc-200 bg-white p-6 text-center dark:border-zinc-800 dark:bg-zinc-950"
+                className="rounded-2xl border border-zinc-200 bg-white p-6 text-center"
               >
-                <div className="text-xs font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">
+                <div className="text-xs font-bold uppercase tracking-wider text-zinc-500 ">
                   {fact.label}
                 </div>
-                <div className="mt-3 text-xl font-semibold text-black dark:text-white">
+                <div className="mt-3 text-xl font-semibold text-black ">
                   {fact.value}
                 </div>
               </div>
             ))}
           </div>
 
-          <div className="mx-auto mt-12 max-w-3xl rounded-2xl border border-zinc-200 bg-zinc-50 p-6 dark:border-zinc-800 dark:bg-zinc-900">
-            <h3 className="text-base font-bold text-black dark:text-white">
+          <div className="mx-auto mt-12 max-w-3xl rounded-2xl border border-zinc-200 bg-zinc-50 p-6">
+            <h3 className="text-base font-bold text-black ">
               About OyeRide
             </h3>
-            <p className="mt-3 text-sm leading-7 text-zinc-700 dark:text-zinc-300">
+            <p className="mt-3 text-sm leading-7 text-zinc-700 ">
               OyeRide is a Kasoa-based ride-hailing and delivery company serving
               Ghana&apos;s Central Region. We connect passengers with vetted
               motorcycle riders, offer same-day parcel and bicycle delivery, and
@@ -180,13 +180,13 @@ export default function PressPage() {
       </section>
 
       {/* Brand assets */}
-      <section id="assets" className="scroll-mt-24 bg-zinc-50 py-20 dark:bg-zinc-950 lg:py-28">
+      <section id="assets" className="scroll-mt-24 bg-zinc-50 py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
               Brand assets
             </h2>
-            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 dark:text-zinc-400">
+            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
               Download official logos, icons, and brand guidelines.
             </p>
           </div>
@@ -196,21 +196,21 @@ export default function PressPage() {
               <a
                 key={asset.title}
                 href={asset.href}
-                className="group flex items-start gap-5 rounded-2xl border border-zinc-200 bg-white p-6 transition hover:border-[#054997] hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900"
+                className="group flex items-start gap-5 rounded-2xl border border-zinc-200 bg-white p-6 transition hover:border-[#054997] hover:shadow-md"
               >
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#e6eef9] text-[#054997]">
                   {asset.icon}
                 </div>
                 <div className="flex-1">
                   <div className="flex items-center justify-between gap-3">
-                    <h3 className="text-base font-bold text-black dark:text-white">
+                    <h3 className="text-base font-bold text-black ">
                       {asset.title}
                     </h3>
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="shrink-0 text-zinc-400 transition group-hover:translate-x-1 group-hover:text-[#054997]">
                       <path d="M7 17 17 7M7 7h10v10" />
                     </svg>
                   </div>
-                  <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                  <p className="mt-2 text-sm leading-6 text-zinc-600 ">
                     {asset.description}
                   </p>
                 </div>
@@ -219,15 +219,15 @@ export default function PressPage() {
           </div>
 
           {/* Usage guidelines */}
-          <div className="mx-auto mt-12 max-w-3xl rounded-2xl border border-zinc-200 bg-white p-6 dark:border-zinc-800 dark:bg-zinc-900 sm:p-8">
-            <h3 className="text-base font-bold text-black dark:text-white">
+          <div className="mx-auto mt-12 max-w-3xl rounded-2xl border border-zinc-200 bg-white p-6 sm:p-8">
+            <h3 className="text-base font-bold text-black ">
               Logo usage guidelines
             </h3>
             <ul className="mt-4 space-y-2.5">
               {guidelines.map((g) => (
                 <li key={g} className="flex items-start gap-3">
-                  <span className="mt-1.5 flex h-1.5 w-1.5 shrink-0 rounded-full bg-[#054997] dark:bg-[#7bb3e8]" />
-                  <span className="text-sm leading-6 text-zinc-700 dark:text-zinc-300">
+                  <span className="mt-1.5 flex h-1.5 w-1.5 shrink-0 rounded-full bg-[#054997]" />
+                  <span className="text-sm leading-6 text-zinc-700 ">
                     {g}
                   </span>
                 </li>
@@ -238,13 +238,13 @@ export default function PressPage() {
       </section>
 
       {/* Press coverage */}
-      <section className="bg-white py-20 dark:bg-black lg:py-28">
+      <section className="bg-white py-20  lg:py-28">
         <div className="mx-auto max-w-5xl px-6">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
               In the news
             </h2>
-            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 dark:text-zinc-400">
+            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
               Recent coverage of OyeRide.
             </p>
           </div>
@@ -254,27 +254,27 @@ export default function PressPage() {
               <a
                 key={item.headline}
                 href={item.href}
-                className="group block rounded-2xl border border-zinc-200 bg-white p-6 transition hover:border-[#054997] hover:shadow-md dark:border-zinc-800 dark:bg-zinc-950 sm:p-8"
+                className="group block rounded-2xl border border-zinc-200 bg-white p-6 transition hover:border-[#054997] hover:shadow-md sm:p-8"
               >
-                <div className="flex items-center gap-3 text-xs font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">
-                  <span className="text-[#054997] dark:text-[#7bb3e8]">
+                <div className="flex items-center gap-3 text-xs font-bold uppercase tracking-wider text-zinc-500 ">
+                  <span className="text-[#054997] ">
                     {item.outlet}
                   </span>
-                  <span className="h-1 w-1 rounded-full bg-zinc-300 dark:bg-zinc-700" />
+                  <span className="h-1 w-1 rounded-full bg-zinc-300" />
                   <span>{item.date}</span>
                 </div>
-                <h3 className="mt-3 text-lg font-bold leading-snug text-black transition group-hover:text-[#054997] dark:text-white dark:group-hover:text-[#7bb3e8] sm:text-xl">
+                <h3 className="mt-3 text-lg font-bold leading-snug text-black transition group-hover:text-[#054997] sm:text-xl">
                   {item.headline}
                 </h3>
               </a>
             ))}
           </div>
 
-          <p className="mt-8 text-center text-sm text-zinc-500 dark:text-zinc-400">
+          <p className="mt-8 text-center text-sm text-zinc-500 ">
             Want to be added to this list?{" "}
             <a
               href="mailto:hello@oyeridegh.com?subject=Press%20Coverage"
-              className="font-semibold text-[#054997] underline dark:text-[#7bb3e8]"
+              className="font-semibold text-[#054997] underline "
             >
               Let us know
             </a>
@@ -284,7 +284,7 @@ export default function PressPage() {
       </section>
 
       {/* Press contact */}
-      <section className="bg-zinc-50 py-20 dark:bg-zinc-950 lg:py-28">
+      <section className="bg-zinc-50 py-20 lg:py-28">
         <div className="mx-auto max-w-3xl px-6">
           <div className="rounded-3xl bg-[#054997] p-8 text-white sm:p-12">
             <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">

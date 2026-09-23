@@ -95,22 +95,22 @@ export function ContactForm() {
 
    if (state === "success") {
     return (
-      <div className="rounded-2xl border border-emerald-200 bg-emerald-50 p-8 dark:border-emerald-900 dark:bg-emerald-950/40">
-        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-emerald-100 text-emerald-600 dark:bg-emerald-900/40 dark:text-emerald-400">
+      <div className="rounded-2xl border border-emerald-200 bg-emerald-50 p-8">
+        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
             <path d="m5 13 4 4L19 7" />
           </svg>
         </div>
-        <h3 className="mt-4 text-lg font-bold text-emerald-900 dark:text-emerald-200">
+        <h3 className="mt-4 text-lg font-bold text-emerald-900">
           Message sent.
         </h3>
-        <p className="mt-2 text-sm leading-6 text-emerald-800 dark:text-emerald-300">
+        <p className="mt-2 text-sm leading-6 text-emerald-800">
           Thanks for reaching out. We&apos;ll get back to you within 24–48
           hours at the email you provided.
         </p>
         <button
           onClick={() => setState("idle")}
-          className="mt-6 text-sm font-semibold text-emerald-900 underline hover:no-underline dark:text-emerald-200"
+          className="mt-6 text-sm font-semibold text-emerald-900 underline hover:no-underline"
         >
           Send another message
         </button>
@@ -126,7 +126,7 @@ export function ContactForm() {
         <div>
           <label
             htmlFor="name"
-            className="block text-sm font-semibold text-black dark:text-white"
+            className="block text-sm font-semibold text-black "
           >
             Your name
           </label>
@@ -138,15 +138,15 @@ export function ContactForm() {
             value={form.name}
             onChange={update}
             aria-invalid={!!fieldErrors.name}
-            className={`mt-2 block w-full rounded-xl border bg-white px-4 py-3 text-sm text-black placeholder-zinc-400 outline-none transition focus:ring-2 dark:bg-zinc-950 dark:text-white dark:placeholder-zinc-500 ${
-              fieldErrors.name
-                ? "border-red-400 focus:border-red-500 focus:ring-red-500/15"
-                : "border-zinc-300 focus:border-[#054997] focus:ring-[#054997]/15 dark:border-zinc-700"
-            }`}
+            className={`mt-2 block w-full rounded-xl border bg-white px-4 py-3 text-sm text-black placeholder-zinc-400 outline-none transition focus:ring-2 ${
+ fieldErrors.name
+ ? "border-red-400 focus:border-red-500 focus:ring-red-500/15"
+ : "border-zinc-300 focus:border-[#054997] focus:ring-[#054997]/15 "
+ }`}
             placeholder="Akosua Mensah"
           />
           {fieldErrors.name && (
-            <p className="mt-1.5 text-xs font-medium text-red-600 dark:text-red-400">
+            <p className="mt-1.5 text-xs font-medium text-red-600 ">
               {fieldErrors.name}
             </p>
           )}
@@ -154,7 +154,7 @@ export function ContactForm() {
         <div>
           <label
             htmlFor="email"
-            className="block text-sm font-semibold text-black dark:text-white"
+            className="block text-sm font-semibold text-black "
           >
             Email address
           </label>
@@ -166,15 +166,15 @@ export function ContactForm() {
             value={form.email}
             onChange={update}
             aria-invalid={!!fieldErrors.email}
-            className={`mt-2 block w-full rounded-xl border bg-white px-4 py-3 text-sm text-black placeholder-zinc-400 outline-none transition focus:ring-2 dark:bg-zinc-950 dark:text-white dark:placeholder-zinc-500 ${
-              fieldErrors.email
-                ? "border-red-400 focus:border-red-500 focus:ring-red-500/15"
-                : "border-zinc-300 focus:border-[#054997] focus:ring-[#054997]/15 dark:border-zinc-700"
-            }`}
+            className={`mt-2 block w-full rounded-xl border bg-white px-4 py-3 text-sm text-black placeholder-zinc-400 outline-none transition focus:ring-2 ${
+ fieldErrors.email
+ ? "border-red-400 focus:border-red-500 focus:ring-red-500/15"
+ : "border-zinc-300 focus:border-[#054997] focus:ring-[#054997]/15 "
+ }`}
             placeholder="you@example.com"
           />
           {fieldErrors.email && (
-            <p className="mt-1.5 text-xs font-medium text-red-600 dark:text-red-400">
+            <p className="mt-1.5 text-xs font-medium text-red-600 ">
               {fieldErrors.email}
             </p>
           )}
@@ -185,7 +185,7 @@ export function ContactForm() {
       <div>
         <label
           htmlFor="subject"
-          className="block text-sm font-semibold text-black dark:text-white"
+          className="block text-sm font-semibold text-black "
         >
           Subject
         </label>
@@ -196,11 +196,11 @@ export function ContactForm() {
           value={form.subject}
           onChange={update}
           aria-invalid={!!fieldErrors.subject}
-          className={`mt-2 block w-full rounded-xl border bg-white px-4 py-3 text-sm text-black outline-none transition focus:ring-2 dark:bg-zinc-950 dark:text-white ${
-            fieldErrors.subject
-              ? "border-red-400 focus:border-red-500 focus:ring-red-500/15"
-              : "border-zinc-300 focus:border-[#054997] focus:ring-[#054997]/15 dark:border-zinc-700"
-          }`}
+          className={`mt-2 block w-full rounded-xl border bg-white px-4 py-3 text-sm text-black outline-none transition focus:ring-2 ${
+ fieldErrors.subject
+ ? "border-red-400 focus:border-red-500 focus:ring-red-500/15"
+ : "border-zinc-300 focus:border-[#054997] focus:ring-[#054997]/15 "
+ }`}
         >
           <option value="">Choose a topic</option>
           <option value="General inquiry">General inquiry</option>
@@ -214,7 +214,7 @@ export function ContactForm() {
           <option value="Other">Something else</option>
         </select>
         {fieldErrors.subject && (
-          <p className="mt-1.5 text-xs font-medium text-red-600 dark:text-red-400">
+          <p className="mt-1.5 text-xs font-medium text-red-600 ">
             {fieldErrors.subject}
           </p>
         )}
@@ -224,7 +224,7 @@ export function ContactForm() {
       <div>
         <label
           htmlFor="message"
-          className="block text-sm font-semibold text-black dark:text-white"
+          className="block text-sm font-semibold text-black "
         >
           Message
         </label>
@@ -236,15 +236,15 @@ export function ContactForm() {
           value={form.message}
           onChange={update}
           aria-invalid={!!fieldErrors.message}
-          className={`mt-2 block w-full resize-none rounded-xl border bg-white px-4 py-3 text-sm text-black placeholder-zinc-400 outline-none transition focus:ring-2 dark:bg-zinc-950 dark:text-white dark:placeholder-zinc-500 ${
-            fieldErrors.message
-              ? "border-red-400 focus:border-red-500 focus:ring-red-500/15"
-              : "border-zinc-300 focus:border-[#054997] focus:ring-[#054997]/15 dark:border-zinc-700"
-          }`}
+          className={`mt-2 block w-full resize-none rounded-xl border bg-white px-4 py-3 text-sm text-black placeholder-zinc-400 outline-none transition focus:ring-2 ${
+ fieldErrors.message
+ ? "border-red-400 focus:border-red-500 focus:ring-red-500/15"
+ : "border-zinc-300 focus:border-[#054997] focus:ring-[#054997]/15 "
+ }`}
           placeholder="Tell us what's on your mind..."
         />
         {fieldErrors.message && (
-          <p className="mt-1.5 text-xs font-medium text-red-600 dark:text-red-400">
+          <p className="mt-1.5 text-xs font-medium text-red-600 ">
             {fieldErrors.message}
           </p>
         )}
@@ -252,8 +252,8 @@ export function ContactForm() {
 
       {/* Top-level error (network / server) */}
       {state === "error" && (
-        <div className="rounded-xl border border-red-200 bg-red-50 px-4 py-3 dark:border-red-900/50 dark:bg-red-950/30">
-          <p className="text-sm leading-6 text-red-700 dark:text-red-300">
+        <div className="rounded-xl border border-red-200 bg-red-50 px-4 py-3">
+          <p className="text-sm leading-6 text-red-700">
             Something went wrong sending your message. Please try again, or
             email us directly at{" "}
             <a
@@ -308,7 +308,7 @@ export function ContactForm() {
         )}
       </button>
 
-      <p className="text-xs leading-5 text-zinc-500 dark:text-zinc-400">
+      <p className="text-xs leading-5 text-zinc-500 ">
         By submitting this form, you agree to our{" "}
         <a href="/privacy" className="underline hover:text-[#054997]">
           Privacy Policy

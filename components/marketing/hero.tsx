@@ -2,14 +2,14 @@ import Link from "next/link";
 
 export function Hero() {
   return (
-    <section className="relative bg-white dark:bg-black">
+    <section className="relative bg-white ">
       {/* Top: copy block */}
       <div className="mx-auto flex max-w-5xl flex-col items-center px-6 pt-20 pb-16 text-center lg:pt-28 lg:pb-20">
-        <h1 className="text-5xl font-bold tracking-tight text-black sm:text-6xl lg:text-7xl dark:text-white">
+        <h1 className="text-5xl font-bold tracking-tight text-black sm:text-6xl lg:text-7xl ">
           Riding is how we move.
         </h1>
 
-        <p className="mt-6 max-w-2xl text-lg font-semibold leading-6.5 text-zinc-600 dark:text-zinc-400">
+        <p className="mt-6 max-w-2xl text-lg font-semibold leading-6.5 text-zinc-600 ">
           Get where you need to go — fast, safe, and affordable. Book a ride in seconds with OyeRide.
         </p>
 

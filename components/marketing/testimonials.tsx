@@ -54,14 +54,14 @@ function Stars({ rating }: { rating: number }) {
 
 export function Testimonials() {
   return (
-    <section className="bg-white py-20 dark:bg-black lg:py-28">
+    <section className="bg-white py-20  lg:py-28">
       <div className="mx-auto max-w-7xl px-6">
         {/* Section header */}
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-extrabold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+          <h2 className="text-3xl font-extrabold tracking-tight text-black sm:text-4xl lg:text-5xl ">
             Trusted by Kasoa
           </h2>
-          <p className="mt-4 text-base font-medium leading-7 text-zinc-600 dark:text-zinc-400">
+          <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
             Riders, Riders, and businesses — real stories from people using OyeRide every day.
           </p>
         </div>

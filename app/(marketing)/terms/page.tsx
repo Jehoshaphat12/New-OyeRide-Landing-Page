@@ -165,9 +165,9 @@ export default function TermsPage() {
       </section>
 
       {/* Intro */}
-      <section className="bg-white py-20 dark:bg-black lg:py-24">
+      <section className="bg-white py-20  lg:py-24">
         <div className="mx-auto max-w-3xl px-6">
-          <p className="text-base leading-8 text-zinc-700 dark:text-zinc-300 sm:text-lg sm:leading-9">
+          <p className="text-base leading-8 text-zinc-700  sm:text-lg sm:leading-9">
             Please read these Terms carefully before using OyeRide. They explain
             your rights and responsibilities, and ours, when you use our app or
             any of our services. If you have any questions, contact us before
@@ -177,15 +177,15 @@ export default function TermsPage() {
       </section>
 
       {/* Sections */}
-      <section className="bg-white pb-20 dark:bg-black lg:pb-28">
+      <section className="bg-white pb-20  lg:pb-28">
         <div className="mx-auto max-w-3xl px-6">
           <div className="space-y-14">
             {sections.map((section) => (
               <div key={section.id} id={section.id} className="scroll-mt-24">
-                <h2 className="text-xl font-bold text-black sm:text-2xl dark:text-white">
+                <h2 className="text-xl font-bold text-black sm:text-2xl ">
                   {section.heading}
                 </h2>
-                <div className="mt-4 space-y-4 text-base leading-8 text-zinc-700 dark:text-zinc-300">
+                <div className="mt-4 space-y-4 text-base leading-8 text-zinc-700 ">
                   {section.body.map((paragraph, i) => (
                     <p key={i}>{paragraph}</p>
                   ))}
@@ -196,9 +196,9 @@ export default function TermsPage() {
                     {section.bullets.map((bullet) => (
                       <li
                         key={bullet}
-                        className="flex items-start gap-3 text-base leading-7 text-zinc-700 dark:text-zinc-300"
+                        className="flex items-start gap-3 text-base leading-7 text-zinc-700 "
                       >
-                        <span className="mt-2 flex h-1.5 w-1.5 shrink-0 rounded-full bg-[#054997] dark:bg-[#7bb3e8]" />
+                        <span className="mt-2 flex h-1.5 w-1.5 shrink-0 rounded-full bg-[#054997]" />
                         <span>{bullet}</span>
                       </li>
                     ))}
@@ -211,31 +211,31 @@ export default function TermsPage() {
       </section>
 
       {/* Related links */}
-      <section className="bg-zinc-50 py-16 dark:bg-zinc-950 lg:py-20">
+      <section className="bg-zinc-50 py-16 lg:py-20">
         <div className="mx-auto max-w-3xl px-6">
-          <h2 className="text-lg font-bold text-black dark:text-white">
+          <h2 className="text-lg font-bold text-black ">
             Related pages
           </h2>
           <div className="mt-6 grid gap-4 sm:grid-cols-2">
             <Link
               href="/privacy"
-              className="rounded-2xl border border-zinc-200 bg-white p-5 transition hover:border-[#054997] dark:border-zinc-800 dark:bg-zinc-900"
+              className="rounded-2xl border border-zinc-200 bg-white p-5 transition hover:border-[#054997]"
             >
-              <p className="text-sm font-bold text-black dark:text-white">
+              <p className="text-sm font-bold text-black ">
                 Privacy Center
               </p>
-              <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
+              <p className="mt-1 text-sm text-zinc-600 ">
                 How we handle your personal data
               </p>
             </Link>
             <Link
               href="/privacy/data-request"
-              className="rounded-2xl border border-zinc-200 bg-white p-5 transition hover:border-[#054997] dark:border-zinc-800 dark:bg-zinc-900"
+              className="rounded-2xl border border-zinc-200 bg-white p-5 transition hover:border-[#054997]"
             >
-              <p className="text-sm font-bold text-black dark:text-white">
+              <p className="text-sm font-bold text-black ">
                 Data rights request
               </p>
-              <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
+              <p className="mt-1 text-sm text-zinc-600 ">
                 Access, correct, or delete your data
               </p>
             </Link>

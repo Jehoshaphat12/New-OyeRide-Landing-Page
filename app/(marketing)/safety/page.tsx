@@ -177,13 +177,13 @@ export default function SafetyPage() {
       </section>
 
       {/* Pillars */}
-      <section className="bg-white py-20 dark:bg-black lg:py-28">
+      <section className="bg-white py-20  lg:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
               How we keep you safe
             </h2>
-            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 dark:text-zinc-400">
+            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
               Four pillars that apply to every ride, every delivery, every refill.
             </p>
           </div>
@@ -192,15 +192,15 @@ export default function SafetyPage() {
             {pillars.map((pillar) => (
               <div
                 key={pillar.title}
-                className="rounded-2xl border border-zinc-200 bg-white p-6 dark:border-zinc-800 dark:bg-zinc-950"
+                className="rounded-2xl border border-zinc-200 bg-white p-6"
               >
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#e6eef9] text-[#054997]">
                   {pillar.icon}
                 </div>
-                <h3 className="mt-6 text-lg font-bold text-black dark:text-white">
+                <h3 className="mt-6 text-lg font-bold text-black ">
                   {pillar.title}
                 </h3>
-                <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                <p className="mt-2 text-sm leading-6 text-zinc-600 ">
                   {pillar.description}
                 </p>
               </div>
@@ -210,13 +210,13 @@ export default function SafetyPage() {
       </section>
 
       {/* How we vet riders */}
-      <section className="bg-zinc-50 py-20 dark:bg-zinc-950 lg:py-28">
+      <section className="bg-zinc-50 py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex flex-col items-center mb-10 text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
               How we vet every rider
             </h2>
-            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 dark:text-zinc-400">
+            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
               No rider gets approved without passing all six checks below.
             </p>
           </div>
@@ -237,12 +237,12 @@ export default function SafetyPage() {
                 {vettingSteps.map((step, i) => (
                   <li
                     key={step}
-                    className="flex items-start gap-4 rounded-2xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-900"
+                    className="flex items-start gap-4 rounded-2xl border border-zinc-200 bg-white p-5"
                   >
                     <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#054997] text-xs font-bold text-white">
                       {i + 1}
                     </span>
-                    <span className="text-sm leading-6 text-zinc-700 dark:text-zinc-300">
+                    <span className="text-sm leading-6 text-zinc-700 ">
                       {step}
                     </span>
                   </li>
@@ -254,13 +254,13 @@ export default function SafetyPage() {
       </section>
 
       {/* In-app tools */}
-      <section id="tools" className="scroll-mt-24 bg-white py-20 dark:bg-black lg:py-28">
+      <section id="tools" className="scroll-mt-24 bg-white py-20  lg:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
               Safety tools in the app
             </h2>
-            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 dark:text-zinc-400">
+            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
               Everything you need is one tap away, right inside the OyeRide app.
             </p>
           </div>
@@ -269,16 +269,16 @@ export default function SafetyPage() {
             {tools.map((tool) => (
               <div
                 key={tool.title}
-                className="flex items-start gap-5 rounded-2xl border border-zinc-200 bg-white p-6 dark:border-zinc-800 dark:bg-zinc-950"
+                className="flex items-start gap-5 rounded-2xl border border-zinc-200 bg-white p-6"
               >
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#e6eef9] text-[#054997]">
                   {tool.icon}
                 </div>
                 <div>
-                  <h3 className="text-base font-bold text-black dark:text-white">
+                  <h3 className="text-base font-bold text-black ">
                     {tool.title}
                   </h3>
-                  <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                  <p className="mt-2 text-sm leading-6 text-zinc-600 ">
                     {tool.description}
                   </p>
                 </div>
@@ -289,13 +289,13 @@ export default function SafetyPage() {
       </section>
 
       {/* Emergency protocol */}
-      <section id="report" className="scroll-mt-24 bg-zinc-50 py-20 dark:bg-zinc-950 lg:py-28">
+      <section id="report" className="scroll-mt-24 bg-zinc-50 py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
               What to do in an emergency
             </h2>
-            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 dark:text-zinc-400">
+            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
               Follow these steps in order. Your safety comes first — always.
             </p>
           </div>
@@ -304,15 +304,15 @@ export default function SafetyPage() {
             {emergencySteps.map((step) => (
               <div
                 key={step.num}
-                className="rounded-2xl border border-zinc-200 bg-white p-6 dark:border-zinc-800 dark:bg-zinc-900"
+                className="rounded-2xl border border-zinc-200 bg-white p-6"
               >
-                <span className="text-3xl font-semibold text-[#054997] dark:text-[#7bb3e8]">
+                <span className="text-3xl font-semibold text-[#054997] ">
                   {step.num}
                 </span>
-                <h3 className="mt-4 text-base font-bold text-black dark:text-white">
+                <h3 className="mt-4 text-base font-bold text-black ">
                   {step.title}
                 </h3>
-                <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                <p className="mt-2 text-sm leading-6 text-zinc-600 ">
                   {step.text}
                 </p>
               </div>
@@ -320,11 +320,11 @@ export default function SafetyPage() {
           </div>
 
           <div className="mx-auto mt-14 max-w-2xl text-center">
-            <p className="text-sm leading-6 text-zinc-500 dark:text-zinc-400">
+            <p className="text-sm leading-6 text-zinc-500 ">
               Report an incident at{" "}
               <a
                 href="mailto:hello@oyeridegh.com?subject=URGENT%20-%20Safety%20Report"
-                className="font-semibold text-[#054997] underline dark:text-[#7bb3e8]"
+                className="font-semibold text-[#054997] underline "
               >
                 hello@oyeridegh.com
               </a>{" "}

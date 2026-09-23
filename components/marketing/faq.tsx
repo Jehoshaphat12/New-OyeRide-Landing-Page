@@ -53,14 +53,14 @@ export function Faq() {
   };
 
   return (
-    <section className="bg-white py-20 dark:bg-black lg:py-28">
+    <section className="bg-white py-20  lg:py-28">
       <div className="mx-auto max-w-3xl px-6">
         {/* Section header */}
         <div className="text-center">
-          <h2 className="text-4xl font-extrabold tracking-tight text-black sm:text-5xl lg:text-6xl dark:text-white">
+          <h2 className="text-4xl font-extrabold tracking-tight text-black sm:text-5xl lg:text-6xl ">
             Frequently Asked Questions
           </h2>
-          <p className="mt-4 text-base font-medium text-zinc-500 dark:text-zinc-400">
+          <p className="mt-4 text-base font-medium text-zinc-500 ">
             Everything you need to know about OyeRide.
           </p>
         </div>
@@ -72,24 +72,24 @@ export function Faq() {
             return (
               <div
                 key={faq.question}
-                className={`overflow-hidden rounded-2xl border bg-white transition dark:bg-zinc-950 ${
-                  isOpen
-                    ? "border-zinc-300 dark:border-zinc-700"
-                    : "border-zinc-200/80 dark:border-zinc-800"
-                }`}
+                className={`overflow-hidden rounded-2xl border bg-white transition ${
+ isOpen
+ ? "border-zinc-300 "
+ : "border-zinc-200/80 "
+ }`}
               >
                 <button
                   onClick={() => toggle(index)}
                   aria-expanded={isOpen}
                   className="flex w-full items-center justify-between gap-6 px-6 py-5 text-left sm:px-8 sm:py-6"
                 >
-                  <span className="text-base font-bold text-black sm:text-lg dark:text-white">
+                  <span className="text-base font-bold text-black sm:text-lg ">
                     {faq.question}
                   </span>
                   <span
-                    className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#e6eef9] text-[#054997] transition-transform dark:bg-[#0a2b56] dark:text-[#7bb3e8] ${
-                      isOpen ? "rotate-45" : ""
-                    }`}
+                    className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#e6eef9] text-[#054997] transition-transform ${
+ isOpen ? "rotate-45" : ""
+ }`}
                   >
                     <svg
                       width="16"
@@ -114,7 +114,7 @@ export function Faq() {
                   }`}
                 >
                   <div className="overflow-hidden">
-                    <p className="px-6 pb-6 text-sm leading-7 text-zinc-600 sm:px-8 sm:pb-8 sm:text-base dark:text-zinc-400">
+                    <p className="px-6 pb-6 text-sm leading-7 text-zinc-600 sm:px-8 sm:pb-8 sm:text-base ">
                       {faq.answer}
                     </p>
                   </div>

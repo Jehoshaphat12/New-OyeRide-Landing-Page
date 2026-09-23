@@ -145,13 +145,13 @@ export default function FleetPage() {
       </section>
 
       {/* Benefits */}
-      <section className="bg-white py-20 dark:bg-black lg:py-28">
+      <section className="bg-white py-20  lg:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
               Why list your fleet
             </h2>
-            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 dark:text-zinc-400">
+            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
               Everything you need to run a rider team — without building your own tech.
             </p>
           </div>
@@ -160,15 +160,15 @@ export default function FleetPage() {
             {benefits.map((benefit) => (
               <div
                 key={benefit.title}
-                className="rounded-2xl border border-zinc-200 bg-white p-6 dark:border-zinc-800 dark:bg-zinc-950"
+                className="rounded-2xl border border-zinc-200 bg-white p-6"
               >
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#e6eef9] text-[#054997]">
                   {benefit.icon}
                 </div>
-                <h3 className="mt-6 text-lg font-bold text-black dark:text-white">
+                <h3 className="mt-6 text-lg font-bold text-black ">
                   {benefit.title}
                 </h3>
-                <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                <p className="mt-2 text-sm leading-6 text-zinc-600 ">
                   {benefit.description}
                 </p>
               </div>
@@ -178,13 +178,13 @@ export default function FleetPage() {
       </section>
 
       {/* Who can apply */}
-      <section className="bg-zinc-50 py-20 dark:bg-zinc-950 lg:py-28">
+      <section className="bg-zinc-50 py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex flex-col items-center mb-10 text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
               Who can apply
             </h2>
-            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 dark:text-zinc-400">
+            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
               If you manage multiple bikes, we&apos;d like to hear from you.
             </p>
           </div>
@@ -204,12 +204,12 @@ export default function FleetPage() {
               {fleetTypes.map((type) => (
                 <div
                   key={type.title}
-                  className="rounded-2xl border border-zinc-200 bg-white p-6 dark:border-zinc-800 dark:bg-zinc-900"
+                  className="rounded-2xl border border-zinc-200 bg-white p-6"
                 >
-                  <h3 className="text-base font-bold text-black dark:text-white">
+                  <h3 className="text-base font-bold text-black ">
                     {type.title}
                   </h3>
-                  <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                  <p className="mt-2 text-sm leading-6 text-zinc-600 ">
                     {type.description}
                   </p>
                 </div>
@@ -220,13 +220,13 @@ export default function FleetPage() {
       </section>
 
       {/* How it works */}
-      <section id="how" className="scroll-mt-24 bg-white py-20 dark:bg-black lg:py-28">
+      <section id="how" className="scroll-mt-24 bg-white py-20  lg:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
               How it works
             </h2>
-            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 dark:text-zinc-400">
+            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
               Four steps from application to your first payout.
             </p>
           </div>
@@ -235,15 +235,15 @@ export default function FleetPage() {
             {steps.map((step) => (
               <div
                 key={step.num}
-                className="rounded-2xl bg-zinc-50 p-6 dark:bg-zinc-900"
+                className="rounded-2xl bg-zinc-50 p-6"
               >
-                <span className="text-3xl font-semibold text-[#054997] dark:text-[#7bb3e8]">
+                <span className="text-3xl font-semibold text-[#054997] ">
                   {step.num}
                 </span>
-                <h3 className="mt-4 text-lg font-bold text-black dark:text-white">
+                <h3 className="mt-4 text-lg font-bold text-black ">
                   {step.title}
                 </h3>
-                <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                <p className="mt-2 text-sm leading-6 text-zinc-600 ">
                   {step.text}
                 </p>
               </div>
@@ -253,13 +253,13 @@ export default function FleetPage() {
       </section>
 
       {/* Requirements */}
-      <section className="bg-zinc-50 py-20 dark:bg-zinc-950 lg:py-28">
+      <section className="bg-zinc-50 py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex flex-col items-center mb-10 text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
               What you need
             </h2>
-            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 dark:text-zinc-400">
+            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
               A short checklist to register your fleet.
             </p>
           </div>
@@ -280,14 +280,14 @@ export default function FleetPage() {
                 {requirements.map((req) => (
                   <li
                     key={req}
-                    className="flex items-start gap-3 rounded-2xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-900"
+                    className="flex items-start gap-3 rounded-2xl border border-zinc-200 bg-white p-5"
                   >
                     <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#054997] text-white">
                       <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
                         <path d="m5 13 4 4L19 7" />
                       </svg>
                     </span>
-                    <span className="text-sm leading-6 text-zinc-700 dark:text-zinc-300">
+                    <span className="text-sm leading-6 text-zinc-700 ">
                       {req}
                     </span>
                   </li>
@@ -299,7 +299,7 @@ export default function FleetPage() {
       </section>
 
       {/* Apply CTA */}
-      <section id="apply" className="scroll-mt-24 bg-white py-20 dark:bg-black lg:py-28">
+      <section id="apply" className="scroll-mt-24 bg-white py-20  lg:py-28">
         <div className="mx-auto max-w-3xl px-6">
           <div className="rounded-3xl bg-[#054997] p-8 text-white sm:p-12">
             <div className="text-center">

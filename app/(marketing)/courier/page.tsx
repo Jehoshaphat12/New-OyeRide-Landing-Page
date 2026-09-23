@@ -150,13 +150,13 @@ export default function CourierPage() {
       </section>
 
       {/* Benefits */}
-      <section className="bg-white py-20 dark:bg-black lg:py-28">
+      <section className="bg-white py-20  lg:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
               Why deliver with OyeRide
             </h2>
-            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 dark:text-zinc-400">
+            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
               Flexible, straightforward, and paid per delivery.
             </p>
           </div>
@@ -165,15 +165,15 @@ export default function CourierPage() {
             {benefits.map((benefit) => (
               <div
                 key={benefit.title}
-                className="rounded-2xl border border-zinc-200 bg-white p-6 dark:border-zinc-800 dark:bg-zinc-950"
+                className="rounded-2xl border border-zinc-200 bg-white p-6"
               >
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#e6eef9] text-[#054997]">
                   {benefit.icon}
                 </div>
-                <h3 className="mt-6 text-lg font-bold text-black dark:text-white">
+                <h3 className="mt-6 text-lg font-bold text-black ">
                   {benefit.title}
                 </h3>
-                <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                <p className="mt-2 text-sm leading-6 text-zinc-600 ">
                   {benefit.description}
                 </p>
               </div>
@@ -183,13 +183,13 @@ export default function CourierPage() {
       </section>
 
       {/* Pick your vehicle — background image cards with gradient */}
-      <section className="bg-zinc-50 py-20 dark:bg-zinc-950 lg:py-28">
+      <section className="bg-zinc-50 py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
               Pick your vehicle
             </h2>
-            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 dark:text-zinc-400">
+            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
               Motorcycle or bicycle — both earn. Choose what fits your life.
             </p>
           </div>
@@ -266,27 +266,27 @@ export default function CourierPage() {
       </section>
 
       {/* How it works */}
-      <section className="bg-white py-20 dark:bg-black lg:py-28">
+      <section className="bg-white py-20  lg:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
               How to get started
             </h2>
-            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 dark:text-zinc-400">
+            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
               Four steps from sign-up to your first delivery.
             </p>
           </div>
 
           <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {steps.map((step) => (
-              <div key={step.num} className="rounded-2xl bg-zinc-50 p-6 dark:bg-zinc-900">
-                <span className="text-3xl font-semibold text-[#054997] dark:text-[#7bb3e8]">
+              <div key={step.num} className="rounded-2xl bg-zinc-50 p-6">
+                <span className="text-3xl font-semibold text-[#054997] ">
                   {step.num}
                 </span>
-                <h3 className="mt-4 text-lg font-bold text-black dark:text-white">
+                <h3 className="mt-4 text-lg font-bold text-black ">
                   {step.title}
                 </h3>
-                <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                <p className="mt-2 text-sm leading-6 text-zinc-600 ">
                   {step.text}
                 </p>
               </div>
@@ -296,13 +296,13 @@ export default function CourierPage() {
       </section>
 
       {/* Requirements — image + 2 checklist cards */}
-      <section id="requirements" className="bg-zinc-50 py-20 dark:bg-zinc-950 lg:py-28">
+      <section id="requirements" className="bg-zinc-50 py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex flex-col items-center mb-10 text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
               What you need
             </h2>
-            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 dark:text-zinc-400">
+            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
               Basic requirements to get started as an OyeRide courier.
             </p>
           </div>
@@ -319,8 +319,8 @@ export default function CourierPage() {
 
             {/* Checklist cards */}
             <div className="flex flex-col gap-5">
-              <div className="rounded-2xl border border-zinc-200 bg-white p-6 dark:border-zinc-800 dark:bg-zinc-900">
-                <h3 className="text-base font-bold text-black dark:text-white">
+              <div className="rounded-2xl border border-zinc-200 bg-white p-6">
+                <h3 className="text-base font-bold text-black ">
                   For all couriers
                 </h3>
                 <ul className="mt-4 space-y-2.5">
@@ -333,7 +333,7 @@ export default function CourierPage() {
                   ].map((item) => (
                     <li
                       key={item}
-                      className="flex items-start gap-2.5 text-sm text-zinc-700 dark:text-zinc-300"
+                      className="flex items-start gap-2.5 text-sm text-zinc-700 "
                     >
                       <span className="mt-1 flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-[#054997] text-white">
                         <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
@@ -346,8 +346,8 @@ export default function CourierPage() {
                 </ul>
               </div>
 
-              <div className="rounded-2xl border border-zinc-200 bg-white p-6 dark:border-zinc-800 dark:bg-zinc-900">
-                <h3 className="text-base font-bold text-black dark:text-white">
+              <div className="rounded-2xl border border-zinc-200 bg-white p-6">
+                <h3 className="text-base font-bold text-black ">
                   For motor couriers only
                 </h3>
                 <ul className="mt-4 space-y-2.5">
@@ -360,7 +360,7 @@ export default function CourierPage() {
                   ].map((item) => (
                     <li
                       key={item}
-                      className="flex items-start gap-2.5 text-sm text-zinc-700 dark:text-zinc-300"
+                      className="flex items-start gap-2.5 text-sm text-zinc-700 "
                     >
                       <span className="mt-1 flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-[#054997] text-white">
                         <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
@@ -377,7 +377,7 @@ export default function CourierPage() {
         </div>
       </section>
 
-      <OrderRide title="Start earning now!" imageSrc=""/>
+      <OrderRide title="Start earning now!" imageSrc="" description="Download the OyeRide app on iOS and Android now to start earning some extra money."/>
 
       {/* Final CTA */}
       <section className="bg-[#070707] py-20 text-white lg:py-28">

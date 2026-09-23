@@ -92,10 +92,10 @@ function AppShowcase() {
   const active = appTabs.find((t) => t.id === activeId) ?? appTabs[0];
 
   return (
-    <section className="bg-white py-20 dark:bg-black lg:py-28">
+    <section className="bg-white py-20  lg:py-28">
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center">
-          <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+          <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
             Download our app
           </h2>
         </div>
@@ -110,8 +110,8 @@ function AppShowcase() {
                 onClick={() => setActiveId(tab.id)}
                 className={`rounded-full px-5 py-2 text-sm font-semibold transition ${
                   isActive
-                    ? "bg-zinc-900 text-white dark:bg-white dark:text-black"
-                    : "border border-zinc-300 bg-white text-zinc-600 hover:border-zinc-400 dark:border-zinc-700 dark:bg-zinc-950 dark:text-zinc-400 dark:hover:border-zinc-600"
+                    ? "bg-zinc-900 text-white "
+                    : "border border-zinc-300 bg-white text-zinc-600 hover:border-zinc-400 "
                 }`}
               >
                 {tab.label}
@@ -201,15 +201,15 @@ export default function DownloadPage() {
       <AppShowcase />
 
       {/* Two columns: How to install + Join the network */}
-      <section className="bg-zinc-50 py-20 dark:bg-zinc-950 lg:py-28">
+      <section className="bg-zinc-50 py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
             {/* Install steps */}
             <div>
-              <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl dark:text-white">
+              <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl ">
                 How to install
               </h2>
-              <p className="mt-4 text-base leading-7 text-zinc-600 dark:text-zinc-400">
+              <p className="mt-4 text-base leading-7 text-zinc-600 ">
                 Two minutes from download to your first ride.
               </p>
 
@@ -224,7 +224,7 @@ export default function DownloadPage() {
                     <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#054997] text-sm font-bold text-white">
                       {i + 1}
                     </span>
-                    <span className="text-base leading-7 text-zinc-700 dark:text-zinc-300">
+                    <span className="text-base leading-7 text-zinc-700 ">
                       {step}
                     </span>
                   </li>
@@ -264,13 +264,13 @@ export default function DownloadPage() {
       {/* Bottom badges */}
       <section
         id="store-badges"
-        className="scroll-mt-24 bg-white py-20 dark:bg-black lg:py-24"
+        className="scroll-mt-24 bg-white py-20  lg:py-24"
       >
         <div className="mx-auto max-w-3xl px-6 text-center">
-          <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl dark:text-white">
+          <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl ">
             Ready when you are.
           </h2>
-          <p className="mt-4 text-base leading-7 text-zinc-600 dark:text-zinc-400">
+          <p className="mt-4 text-base leading-7 text-zinc-600 ">
             Download free. Take your first ride today.
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">

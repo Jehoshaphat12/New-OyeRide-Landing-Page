@@ -66,13 +66,13 @@ export default function PrivacyPage() {
       </section>
 
       {/* Utility portals */}
-      <section className="bg-white py-20 dark:bg-black lg:py-24">
+      <section className="bg-white py-20  lg:py-24">
         <div className="mx-auto max-w-5xl px-6">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl dark:text-white">
+            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl ">
               Quick actions
             </h2>
-            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 dark:text-zinc-400">
+            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
               The two most common requests — one tap away.
             </p>
           </div>
@@ -83,10 +83,10 @@ export default function PrivacyPage() {
                 key={portal.href}
                 href={portal.href}
                 className={`group relative flex flex-col overflow-hidden rounded-3xl p-8 transition hover:-translate-y-0.5 hover:shadow-xl ${
-                  portal.accent === "blue"
-                    ? "bg-[#054997] text-white"
-                    : "bg-zinc-900 text-white dark:bg-zinc-950 dark:border dark:border-zinc-800"
-                }`}
+ portal.accent === "blue"
+ ? "bg-[#054997] text-white"
+ : "bg-zinc-900 text-white "
+ }`}
               >
                 <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/15 text-white backdrop-blur">
                   {portal.icon}
@@ -110,13 +110,13 @@ export default function PrivacyPage() {
       </section>
 
       {/* Privacy notices by category */}
-      <section className="bg-zinc-50 py-20 dark:bg-zinc-950 lg:py-28">
+      <section className="bg-zinc-50 py-20 lg:py-28">
         <div className="mx-auto max-w-5xl px-6">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
               Privacy notices by service
             </h2>
-            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 dark:text-zinc-400">
+            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
               Each notice explains what we collect and how we handle it for that
               service.
             </p>
@@ -131,10 +131,10 @@ export default function PrivacyPage() {
               return (
                 <div key={category.name}>
                   <div className="mb-6">
-                    <h3 className="text-xl font-bold text-black sm:text-2xl dark:text-white">
+                    <h3 className="text-xl font-bold text-black sm:text-2xl ">
                       {category.name}
                     </h3>
-                    <p className="mt-1.5 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                    <p className="mt-1.5 text-sm leading-6 text-zinc-600 ">
                       {category.description}
                     </p>
                   </div>
@@ -144,15 +144,15 @@ export default function PrivacyPage() {
                       <Link
                         key={notice.slug}
                         href={`/privacy/${notice.slug}`}
-                        className="group flex flex-col rounded-2xl border border-zinc-200 bg-white p-6 transition hover:border-[#054997] hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900"
+                        className="group flex flex-col rounded-2xl border border-zinc-200 bg-white p-6 transition hover:border-[#054997] hover:shadow-md"
                       >
-                        <h4 className="text-base font-bold text-black dark:text-white">
+                        <h4 className="text-base font-bold text-black ">
                           {notice.title}
                         </h4>
-                        <p className="mt-2 flex-1 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                        <p className="mt-2 flex-1 text-sm leading-6 text-zinc-600 ">
                           {notice.summary}
                         </p>
-                        <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-[#054997] dark:text-[#7bb3e8]">
+                        <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-[#054997] ">
                           Read notice
                           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transition-transform group-hover:translate-x-1">
                             <path d="M5 12h14M12 5l7 7-7 7" />

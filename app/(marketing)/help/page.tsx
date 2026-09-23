@@ -119,24 +119,24 @@ function FaqItem({ question, answer }: { question: string; answer: string }) {
 
   return (
     <div
-      className={`overflow-hidden rounded-2xl border bg-white transition dark:bg-zinc-900 ${
-        open
-          ? "border-zinc-300 dark:border-zinc-700"
-          : "border-zinc-200/80 dark:border-zinc-800"
-      }`}
+      className={`overflow-hidden rounded-2xl border bg-white transition ${
+ open
+ ? "border-zinc-300 "
+ : "border-zinc-200/80 "
+ }`}
     >
       <button
         onClick={() => setOpen((v) => !v)}
         aria-expanded={open}
         className="flex w-full items-center justify-between gap-6 px-6 py-5 text-left"
       >
-        <span className="text-base font-semibold text-black dark:text-white">
+        <span className="text-base font-semibold text-black ">
           {question}
         </span>
         <span
-          className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#e6eef9] text-[#054997] transition-transform dark:bg-[#0a2b56] dark:text-[#7bb3e8] ${
-            open ? "rotate-45" : ""
-          }`}
+          className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#e6eef9] text-[#054997] transition-transform ${
+ open ? "rotate-45" : ""
+ }`}
         >
           <svg
             width="14"
@@ -158,7 +158,7 @@ function FaqItem({ question, answer }: { question: string; answer: string }) {
         }`}
       >
         <div className="overflow-hidden">
-          <p className="px-6 pb-6 text-sm leading-7 text-zinc-600 dark:text-zinc-400">
+          <p className="px-6 pb-6 text-sm leading-7 text-zinc-600 ">
             {answer}
           </p>
         </div>
@@ -198,13 +198,13 @@ export default function HelpPage() {
       </section>
 
       {/* Contact methods */}
-      <section id="contact" className="scroll-mt-24 bg-white py-20 dark:bg-black lg:py-28">
+      <section id="contact" className="scroll-mt-24 bg-white py-20  lg:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
               Get in touch
             </h2>
-            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 dark:text-zinc-400">
+            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
               Three ways to reach us. Pick whichever suits your situation.
             </p>
           </div>
@@ -214,18 +214,18 @@ export default function HelpPage() {
               <a
                 key={method.title}
                 href={method.href}
-                className="group flex flex-col rounded-2xl border border-zinc-200 bg-white p-6 transition hover:border-[#054997] hover:shadow-md dark:border-zinc-800 dark:bg-zinc-950"
+                className="group flex flex-col rounded-2xl border border-zinc-200 bg-white p-6 transition hover:border-[#054997] hover:shadow-md"
               >
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#e6eef9] text-[#054997]">
                   {method.icon}
                 </div>
-                <h3 className="mt-6 text-lg font-bold text-black dark:text-white">
+                <h3 className="mt-6 text-lg font-bold text-black ">
                   {method.title}
                 </h3>
-                <p className="mt-2 flex-1 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                <p className="mt-2 flex-1 text-sm leading-6 text-zinc-600 ">
                   {method.description}
                 </p>
-                <span className="mt-6 inline-flex text-sm font-semibold text-[#054997] transition group-hover:translate-x-1 dark:text-[#7bb3e8]">
+                <span className="mt-6 inline-flex text-sm font-semibold text-[#054997] transition group-hover:translate-x-1 ">
                   {method.value} →
                 </span>
               </a>
@@ -233,7 +233,7 @@ export default function HelpPage() {
           </div>
 
           <div className="mx-auto mt-10 max-w-2xl text-center">
-            <p className="text-sm leading-6 text-zinc-500 dark:text-zinc-400">
+            <p className="text-sm leading-6 text-zinc-500 ">
               We aim to respond to all support emails within 24–48 hours.
             </p>
           </div>
@@ -241,13 +241,13 @@ export default function HelpPage() {
       </section>
 
       {/* FAQs */}
-      <section id="faqs" className="scroll-mt-24 bg-zinc-50 py-20 dark:bg-zinc-950 lg:py-28">
+      <section id="faqs" className="scroll-mt-24 bg-zinc-50 py-20 lg:py-28">
         <div className="mx-auto max-w-3xl px-6">
           <div className="text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
               Frequently asked questions
             </h2>
-            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 dark:text-zinc-400">
+            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
               Common questions, organised by category.
             </p>
           </div>
@@ -255,7 +255,7 @@ export default function HelpPage() {
           <div className="mt-16 space-y-14">
             {faqCategories.map((category) => (
               <div key={category.id} id={category.id} className="scroll-mt-24">
-                <h3 className="mb-5 text-xl font-bold text-black sm:text-2xl dark:text-white">
+                <h3 className="mb-5 text-xl font-bold text-black sm:text-2xl ">
                   {category.title}
                 </h3>
                 <div className="space-y-3">
@@ -270,21 +270,21 @@ export default function HelpPage() {
       </section>
 
       {/* Emergency / safety note */}
-      <section className="bg-white py-20 dark:bg-black lg:py-28">
+      <section className="bg-white py-20  lg:py-28">
         <div className="mx-auto max-w-3xl px-6">
-          <div className="rounded-3xl border border-red-200 bg-red-50 p-8 text-center dark:border-red-900/50 dark:bg-red-950/30 sm:p-10">
+          <div className="rounded-3xl border border-red-200 bg-red-50 p-8 text-center sm:p-10">
             <div className="flex justify-center">
-              <span className="flex h-12 w-12 items-center justify-center rounded-full bg-red-100 text-red-600 dark:bg-red-900/40 dark:text-red-400">
+              <span className="flex h-12 w-12 items-center justify-center rounded-full bg-red-100 text-red-600 ">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1Z" />
                   <path d="M12 8v4M12 16h.01" />
                 </svg>
               </span>
             </div>
-            <h3 className="mt-5 text-xl font-bold text-red-900 dark:text-red-300 sm:text-2xl">
+            <h3 className="mt-5 text-xl font-bold text-red-900 sm:text-2xl">
               Safety concern or urgent issue?
             </h3>
-            <p className="mx-auto mt-3 max-w-2xl text-sm leading-7 text-red-800 dark:text-red-300/90">
+            <p className="mx-auto mt-3 max-w-2xl text-sm leading-7 text-red-800 ">
               If you feel unsafe during a trip or have an urgent safety concern,
               contact local emergency services first. Afterward, email us at{" "}
               <strong>hello@oyeridegh.com</strong> with &quot;URGENT&quot; in the

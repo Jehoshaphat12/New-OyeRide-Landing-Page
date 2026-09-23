@@ -156,13 +156,13 @@ export function Services() {
   };
 
   return (
-    <section className="bg-white py-20 dark:bg-black lg:py-28">
+    <section className="bg-white py-20  lg:py-28">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-extrabold tracking-tight text-black sm:text-4xl lg:text-5xl dark:text-white">
+          <h2 className="text-3xl font-extrabold tracking-tight text-black sm:text-4xl lg:text-5xl ">
             What we offer you
           </h2>
-          <p className="mt-4 text-base font-medium leading-7 text-zinc-600 dark:text-zinc-400">
+          <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
             From beating rush-hour traffic to getting packages delivered across Kasoa — we&apos;ve got you covered.
           </p>
         </div>
@@ -182,7 +182,7 @@ export function Services() {
           <button
             onClick={() => scrollByCard(-1)}
             aria-label="Scroll left"
-            className="flex h-11 w-11 items-center justify-center rounded-full border border-zinc-200 bg-white text-black transition hover:bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-900 dark:text-white dark:hover:bg-zinc-800"
+            className="flex h-11 w-11 items-center justify-center rounded-full border border-zinc-200 bg-white text-black transition hover:bg-zinc-100"
           >
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M15 18l-6-6 6-6" />
@@ -191,7 +191,7 @@ export function Services() {
           <button
             onClick={() => scrollByCard(1)}
             aria-label="Scroll right"
-            className="flex h-11 w-11 items-center justify-center rounded-full border border-zinc-200 bg-white text-black transition hover:bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-900 dark:text-white dark:hover:bg-zinc-800"
+            className="flex h-11 w-11 items-center justify-center rounded-full border border-zinc-200 bg-white text-black transition hover:bg-zinc-100"
           >
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M9 18l6-6-6-6" />
