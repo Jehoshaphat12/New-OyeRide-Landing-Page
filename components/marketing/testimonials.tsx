@@ -54,7 +54,7 @@ function Stars({ rating }: { rating: number }) {
 
 export function Testimonials() {
   return (
-    <section className="bg-white py-20  lg:py-28">
+    <section className="bg-zinc-100 py-20  lg:py-28">
       <div className="mx-auto max-w-7xl px-6">
         {/* Section header */}
         <div className="mx-auto max-w-2xl text-center">
@@ -85,13 +85,13 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
     .slice(0, 2);
 
   return (
-    <figure className="flex flex-col rounded-[5rem] bg-[#85b7f0] p-2 text-white shadow-lg shadow-blue-900/10 sm:p-4">
-    <figure className="flex flex-col rounded-[5rem] bg-[#054997] p-6 text-white shadow-lg shadow-blue-900/10 sm:p-8">
+    // <figure className="flex flex-col rounded-[5rem] bg-[#85b7f0] p-2 text-white shadow-lg shadow-blue-900/10 sm:p-4">
+    <figure className="flex flex-col rounded-4xl bg-[#ffffff] p-6 text-black shadow-xl shadow-blue-900/10 sm:p-8">
       {/* Header: avatar + name + role */}
       <figcaption className="flex items-center gap-4">
         <div
           aria-hidden="true"
-          className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-white text-base font-bold text-[#054997] sm:h-16 sm:w-16"
+          className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#054997] text-base font-bold text-[#fcfcfc] sm:h-16 sm:w-16"
         >
           {initials}
         </div>
@@ -99,14 +99,14 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
           <div className="text-base font-bold sm:text-lg">
             {testimonial.name}
           </div>
-          <div className="truncate text-sm text-white/70">
+          <div className="truncate text-sm text-black/70">
             {testimonial.role} · {testimonial.location}
           </div>
         </div>
       </figcaption>
 
       {/* Quote */}
-      <blockquote className="mt-6 flex-1 text-sm leading-7 text-white/90 sm:text-base sm:leading-8">
+      <blockquote className="mt-6 flex-1 text-sm leading-7 text-black/90 sm:text-base sm:leading-8">
         &ldquo; {testimonial.quote} &rdquo;
       </blockquote>
 
@@ -118,6 +118,6 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
         </span>
       </div>
     </figure>
-    </figure>
+    // </figure>
   );
 }

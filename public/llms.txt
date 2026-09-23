@@ -1,0 +1,60 @@
+# OyeRide
+
+> Fast motor rides and reliable deliveries in Kasoa, Ghana. Book a ride or send a package in seconds.
+
+OyeRide is a ride-hailing and delivery platform operating in Kasoa, Ghana. It connects passengers and senders with nearby motorcycle and bicycle riders through a mobile app.
+
+## Services
+
+- **Oye Motor Ride**: On-demand motorcycle taxi service for beating Kasoa traffic. Passengers book a rider, track them live on a map, and pay a transparent upfront fare.
+- **Oye Motor Delivery**: Motorcycle-based package delivery for larger items or longer distances across Kasoa. Real-time tracking included.
+- **Oye Bicycle Delivery**: Eco-friendly, zero-emission bicycle delivery for documents, food, and small parcels over short distances. The most affordable option.
+- **Gas Refill**: Doorstep gas cylinder refill — a rider picks up the empty cylinder, has it refilled at a verified station, and returns it, same day.
+
+## Platforms
+
+- Android app (free download): https://play.google.com/store/apps/details?id=com.jehoshaphat12.oyeride
+- iOS app (free download): https://apps.apple.com/app/oyeride/id6804677598
+- Official website: https://oyeridegh.com/
+
+## Key Features
+
+- Real-time GPS tracking of driver from acceptance to destination
+- Surge pricing based on demand, time of day, and location
+- Live driver-to-pickup route shown on passenger map
+- In-app push notifications at every ride stage
+- 10% new user discount on first 2 completed rides
+- In-app chat between passenger and driver
+- Ride history and ratings
+- Multi-stop bookings (up to 3 stops)
+
+## Earn with OyeRide
+
+- **Become a Rider**: Sign up as a motorcycle or bicycle rider inside the app and earn on a flexible schedule. https://oyeridegh.com/drive
+- **Become a Courier**: Deliver parcels on a motorcycle or bicycle instead of carrying passengers. https://oyeridegh.com/courier
+- **Fleet Owners**: List a fleet of motorcycles, manage multiple riders, and track every trip from a dashboard. https://oyeridegh.com/fleet
+- **Merchants**: List a restaurant, shop, or pharmacy for delivery through OyeRide. https://oyeridegh.com/merchant
+
+## Target Users
+
+- Passengers in Kasoa needing fast, affordable transport
+- Businesses and individuals sending packages across Kasoa
+- Motorcycle and bicycle riders looking to earn income flexibly
+- Local merchants who want delivery handled for them
+
+## Company
+
+- Founded in Ghana
+- Operating in Kasoa
+- Expanding to more Ghanaian cities
+- About: https://oyeridegh.com/about
+- Careers: https://oyeridegh.com/careers
+- Press & media: https://oyeridegh.com/press
+
+## Optional
+
+- Privacy Policy: https://oyeridegh.com/privacy
+- Terms of Service: https://oyeridegh.com/terms
+- Safety: https://oyeridegh.com/safety
+- Help Center: https://oyeridegh.com/help
+- Contact: https://oyeridegh.com/contact

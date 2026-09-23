@@ -169,7 +169,7 @@ export default function SafetyPage() {
         {/* Full-bleed image below */}
         <div className="w-full">
           <img
-            src="/.png"
+            src="/privacyImg1.png"
             alt="OyeRide rider with passenger, safely equipped"
             className="h-[400px] w-full object-cover sm:h-[500px] lg:h-[640px]"
           />
@@ -225,7 +225,7 @@ export default function SafetyPage() {
             {/* Image */}
             <div className="relative overflow-hidden rounded-3xl">
               <img
-                src="/riderVetting.png"
+                src="/vettingImg1.png"
                 alt="OyeRide rider verification"
                 className="aspect-[4/5] w-full object-cover"
               />

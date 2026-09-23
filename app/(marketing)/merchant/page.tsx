@@ -127,7 +127,7 @@ export default function MerchantPage() {
 
         <div className="w-full">
           <img
-            src="/merchantHero.png"
+            src="/salesImg3.png"
             alt="Shop owner preparing an OyeRide order"
             className="h-[400px] w-full object-cover sm:h-[500px] lg:h-[640px]"
           />
@@ -183,7 +183,7 @@ export default function MerchantPage() {
             {/* Image */}
             <div className="relative overflow-hidden rounded-3xl">
               <img
-                src="/merchantBusiness.png"
+                src="/salesImg2.png"
                 alt="Merchant preparing a customer order"
                 className="aspect-[4/5] w-full object-cover"
               />
@@ -262,7 +262,7 @@ export default function MerchantPage() {
             {/* Image */}
             <div className="relative overflow-hidden rounded-3xl">
               <img
-                src="/merchantRequirements.png"
+                src="/salesImg1.png"
                 alt="Merchant verifying business details"
                 className="aspect-[4/5] w-full object-cover"
               />

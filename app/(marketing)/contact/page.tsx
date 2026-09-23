@@ -117,7 +117,7 @@ export default function ContactPage() {
                   Many common questions are already answered in our FAQ.
                 </p>
                 <Link
-                  href="/#faq"
+                  href="/help/#faqs"
                   className="mt-4 inline-flex text-sm font-semibold text-[#054997] hover:underline "
                 >
                   Check the FAQ →
