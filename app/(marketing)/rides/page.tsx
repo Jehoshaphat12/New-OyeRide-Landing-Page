@@ -119,7 +119,7 @@ export default function RidesPage() {
         {/* Full-bleed image below */}
         <div className="w-full">
           <img
-            src="/ride00.png"
+            src="/heroImg2.png"
             alt="OyeRide rider on the road"
             className="h-[400px] w-full object-cover sm:h-[500px] lg:h-[640px]"
           />
@@ -198,6 +198,13 @@ export default function RidesPage() {
               <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
                 Your safety comes first.
               </h2>
+              <div className="relative overflow-hidden mt-5 rounded-3xl">
+              <img
+                src="/ride00.png"
+                alt="OyeRide rider gearing up for a trip"
+                className="aspect-[4/5] w-full h-[30rem] object-cover"
+              />
+            </div>
               <p className="mt-6 text-base leading-7 text-zinc-600 ">
                 Every OyeRide trip is built on trust. We vet our riders, track every journey,
                 and give you the tools to ride with confidence — day or night.
@@ -208,6 +215,8 @@ export default function RidesPage() {
               >
                 Learn more about safety
               </Link>
+              {/* Image */}
+            
             </div>
 
             {/* Right: safety points */}

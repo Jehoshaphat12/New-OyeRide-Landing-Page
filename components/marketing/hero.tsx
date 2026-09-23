@@ -21,7 +21,7 @@ export function Hero() {
             Get the app
           </Link>
           <Link
-            href="/book"
+            href="/download"
             className="w-full sm:w-56 rounded-full bg-[#e4e4e4] px-6 py-3 text-center text-base font-semibold text-black transition hover:bg-zinc-200"
           >
             Book a ride →

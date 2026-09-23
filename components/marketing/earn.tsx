@@ -53,7 +53,7 @@ const blocks: EarnBlock[] = [
       "List your business on OyeRide and turn everyday app traffic into daily orders — we handle delivery.",
     cta: "List your business",
     href: "/merchant",
-    image: "/Merchant.png",
+    image: "/businessImg1.png",
     imageAlt: "Shop owner preparing an order for OyeRide delivery",
   },
 ];

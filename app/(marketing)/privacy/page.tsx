@@ -58,7 +58,7 @@ export default function PrivacyPage() {
 
         <div className="w-full">
           <img
-            src="/privacyHero.png"
+            src="/privacyImg1.png"
             alt=""
             className="h-[400px] w-full object-cover sm:h-[500px] lg:h-[640px]"
           />
@@ -179,7 +179,7 @@ export default function PrivacyPage() {
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
-              href="mailto:hello@oyeridegh.com?subject=Privacy%20Question"
+              href="/contact"
               className="inline-flex w-full justify-center rounded-full bg-white px-7 py-3.5 text-base font-semibold text-[#054997] transition hover:bg-zinc-100 sm:w-auto"
             >
               Email us

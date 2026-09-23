@@ -124,7 +124,7 @@ export default function FleetPage() {
               href="#apply"
               className="w-full rounded-full bg-white px-6 py-3 text-center text-base font-semibold text-[#054997] transition hover:bg-zinc-100 sm:w-56"
             >
-              Apply as a fleet owner
+              Apply now!
             </Link>
             <Link
               href="#how"

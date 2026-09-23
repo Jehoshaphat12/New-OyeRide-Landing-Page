@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 const facts = [
-  { label: "Founded", value: "2024" },
+  { label: "Founded", value: "2025" },
   { label: "Headquarters", value: "Kasoa, Ghana" },
   { label: "Services", value: "Rides, Delivery, Bicycle, Gas" },
   { label: "Coverage", value: "Kasoa, Central Region" },
@@ -129,9 +129,9 @@ export default function PressPage() {
 
         <div className="w-full">
           <img
-            src="/pressHero.png"
+            src="/press.png"
             alt=""
-            className="h-[400px] w-full object-cover sm:h-[500px] lg:h-[640px]"
+            className="h-[400px] object-bottom w-full object-cover sm:h-[500px] lg:h-[640px]"
           />
         </div>
       </section>
@@ -172,7 +172,7 @@ export default function PressPage() {
               OyeRide is a Kasoa-based ride-hailing and delivery company serving
               Ghana&apos;s Central Region. We connect passengers with vetted
               motorcycle riders, offer same-day parcel and bicycle delivery, and
-              provide doorstep gas cylinder refills. Founded in 2024, OyeRide is
+              provide doorstep gas cylinder refills. Founded in 2025, OyeRide is
               built for the way Ghanaians actually move.
             </p>
           </div>

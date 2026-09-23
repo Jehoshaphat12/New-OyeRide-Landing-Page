@@ -59,6 +59,7 @@ const openRoles = [
     location: "Kasoa, Ghana",
     description:
       "Build features across the OyeRide app — from the rider experience to internal operations tools. React Native, Node, and Firebase.",
+    image: "/roleImg1.png", // Replace with your actual image path
   },
   {
     title: "Operations Lead",
@@ -66,6 +67,7 @@ const openRoles = [
     location: "Kasoa, Ghana",
     description:
       "Own rider and courier onboarding, quality, and city expansion. You'll work directly with our teams on the ground.",
+    image: "/roleImg2.png", // Replace with your actual image path
   },
   {
     title: "Customer Support Associate",
@@ -73,6 +75,7 @@ const openRoles = [
     location: "Kasoa, Ghana",
     description:
       "Be the voice of OyeRide for our passengers, riders, and couriers. Handle live trip issues and follow-ups by email.",
+    image: "/roleImg3.png", // Replace with your actual image path
   },
 ];
 
@@ -116,7 +119,7 @@ export default function CareersPage() {
 
         <div className="w-full">
           <img
-            src="/careersHero.png"
+            src="/teamImg1.png"
             alt="The OyeRide team at work in Kasoa"
             className="h-[400px] w-full object-cover sm:h-[500px] lg:h-[640px]"
           />
@@ -124,13 +127,13 @@ export default function CareersPage() {
       </section>
 
       {/* How we work */}
-      <section id="how-we-work" className="scroll-mt-24 bg-white py-20  lg:py-28">
+      <section id="how-we-work" className="scroll-mt-24 bg-white py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
+            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl">
               How we work
             </h2>
-            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
+            <p className="mt-4 text-base font-medium leading-7 text-zinc-600">
               Four principles that guide every decision at OyeRide.
             </p>
           </div>
@@ -144,10 +147,10 @@ export default function CareersPage() {
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#e6eef9] text-[#054997]">
                   {value.icon}
                 </div>
-                <h3 className="mt-6 text-lg font-bold text-black ">
+                <h3 className="mt-6 text-lg font-bold text-black">
                   {value.title}
                 </h3>
-                <p className="mt-2 text-sm leading-6 text-zinc-600 ">
+                <p className="mt-2 text-sm leading-6 text-zinc-600">
                   {value.description}
                 </p>
               </div>
@@ -157,58 +160,67 @@ export default function CareersPage() {
       </section>
 
       {/* Open roles */}
-      <section id="roles" className="scroll-mt-24 bg-zinc-50 py-20 lg:py-28">
+      <section id="roles" className="scroll-mt-24 bg-[#022349] py-20 lg:py-28">
         <div className="mx-auto max-w-5xl px-6">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
+            <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">
               Open roles
             </h2>
-            <p className="mt-4 text-base font-medium leading-7 text-zinc-600 ">
+            <p className="mt-4 text-base font-medium leading-7 text-zinc-300">
               {openRoles.length} position{openRoles.length === 1 ? "" : "s"} currently open.
             </p>
           </div>
 
-          <div className="mt-16 space-y-4">
+          <div className="mt-16 space-y-8">
             {openRoles.map((role) => (
               <div
                 key={role.title}
-                className="group rounded-2xl border border-zinc-200 bg-white p-6 transition hover:border-[#054997] hover:shadow-md sm:p-8"
+                className="group flex flex-col overflow-hidden rounded-3xl border-2 border-blue-500/50 bg-[#054997] transition hover:border-blue-400 hover:shadow-xl md:flex-row"
               >
-                <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
-                  <div className="flex-1">
-                    <div className="flex flex-wrap items-center gap-3">
-                      <h3 className="text-xl font-bold text-black ">
-                        {role.title}
-                      </h3>
-                      <span className="inline-flex rounded-full bg-[#e6eef9] px-3 py-1 text-xs font-semibold text-[#054997]">
-                        {role.type}
-                      </span>
-                    </div>
-                    <p className="mt-2 flex items-center gap-2 text-sm font-medium text-zinc-500 ">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
-                        <circle cx="12" cy="10" r="3" />
-                      </svg>
-                      {role.location}
-                    </p>
-                    <p className="mt-4 max-w-2xl text-sm leading-6 text-zinc-600 ">
-                      {role.description}
-                    </p>
-                  </div>
+                {/* Image Section */}
+                <div className="relative h-64 w-full shrink-0 md:h-auto md:w-2/5 lg:w-1/3">
+                  <img
+                    src={role.image}
+                    alt={role.title}
+                    className="h-full w-full object-cover"
+                  />
+                </div>
 
-                  <a
-                    href={`mailto:hello@oyeridegh.com?subject=${encodeURIComponent(
-                      `Application — ${role.title}`
-                    )}&body=${encodeURIComponent(
-                      `Hello OyeRide Team,\n\nI'd like to apply for the ${role.title} role.\n\nPlease find my CV and any relevant links below.\n\n— [Your name]`
-                    )}`}
-                    className="inline-flex shrink-0 items-center gap-2 rounded-full bg-[#054997] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#04356f]"
-                  >
-                    Apply now
+                {/* Content Section */}
+                <div className="flex flex-1 flex-col justify-center p-6 sm:p-8">
+                  <div className="flex flex-wrap items-center gap-3">
+                    <h3 className="text-2xl font-bold text-white">
+                      {role.title}
+                    </h3>
+                    <span className="inline-flex rounded-full bg-blue-800/50 px-3 py-1 text-xs font-semibold text-blue-100">
+                      {role.type}
+                    </span>
+                  </div>
+                  
+                  <p className="mt-3 flex items-center gap-2 text-sm font-medium text-blue-200">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M5 12h14M12 5l7 7-7 7" />
+                      <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                      <circle cx="12" cy="10" r="3" />
                     </svg>
-                  </a>
+                    {role.location}
+                  </p>
+                  
+                  <p className="mt-4 text-sm leading-6 text-blue-100">
+                    {role.description}
+                  </p>
+
+                  <div className="mt-8">
+                    <a
+                      href={`mailto:hello@oyeridegh.com?subject=${encodeURIComponent(
+                        `Application — ${role.title}`
+                      )}&body=${encodeURIComponent(
+                        `Hello OyeRide Team,\n\nI'd like to apply for the ${role.title} role.\n\nPlease find my CV and any relevant links below.\n\n— [Your name]`
+                      )}`}
+                      className="inline-flex w-full items-center justify-center rounded-full bg-white px-6 py-3 text-base font-semibold text-[#054997] transition hover:bg-zinc-100 sm:w-auto"
+                    >
+                      Apply now
+                    </a>
+                  </div>
                 </div>
               </div>
             ))}
@@ -217,13 +229,13 @@ export default function CareersPage() {
       </section>
 
       {/* Perks */}
-      <section className="bg-white py-20  lg:py-28">
+      <section className="bg-white py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
             {/* Image */}
             <div className="relative overflow-hidden rounded-3xl">
               <img
-                src="/careersTeam.png"
+                src="/RoleImg1.png"
                 alt="The OyeRide team"
                 className="aspect-[4/5] w-full object-cover"
               />
@@ -231,10 +243,10 @@ export default function CareersPage() {
 
             {/* Perks list */}
             <div>
-              <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
+              <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl">
                 What we offer
               </h2>
-              <p className="mt-4 text-base leading-7 text-zinc-600 ">
+              <p className="mt-4 text-base leading-7 text-zinc-600">
                 Working at OyeRide comes with real benefits — not the ping-pong
                 table kind.
               </p>
@@ -247,7 +259,7 @@ export default function CareersPage() {
                         <path d="m5 13 4 4L19 7" />
                       </svg>
                     </span>
-                    <span className="text-sm leading-6 text-zinc-700 ">
+                    <span className="text-sm leading-6 text-zinc-700">
                       {perk}
                     </span>
                   </li>
@@ -261,10 +273,10 @@ export default function CareersPage() {
       {/* No matching role CTA */}
       <section className="bg-zinc-50 py-20 lg:py-28">
         <div className="mx-auto max-w-3xl px-6 text-center">
-          <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl ">
+          <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl">
             Don&apos;t see your role?
           </h2>
-          <p className="mt-6 text-base leading-7 text-zinc-600 ">
+          <p className="mt-6 text-base leading-7 text-zinc-600">
             We&apos;re growing fast and always interested in meeting talented
             people. If you think you can help us move Ghana, send us a note
             telling us how.

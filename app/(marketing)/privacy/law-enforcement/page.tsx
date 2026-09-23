@@ -41,7 +41,7 @@ export default function LawEnforcementPage() {
       {/* Hero */}
       <section className="relative bg-[#054997] text-white">
         <div className="mx-auto flex max-w-4xl flex-col items-center px-6 pt-20 pb-16 text-center lg:pt-28 lg:pb-20">
-          <Link
+          {/* <Link
             href="/privacy"
             className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-white backdrop-blur transition hover:bg-white/15"
           >
@@ -49,7 +49,7 @@ export default function LawEnforcementPage() {
               <path d="M19 12H5M12 19l-7-7 7-7" />
             </svg>
             Back to Privacy Center
-          </Link>
+          </Link> */}
 
           <h1 className="mt-8 text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
             Law enforcement requests
@@ -62,7 +62,7 @@ export default function LawEnforcementPage() {
 
         <div className="w-full">
           <img
-            src="/privacyHero.png"
+            src="/tableImg1.png"
             alt=""
             className="h-[400px] w-full object-cover sm:h-[500px] lg:h-[640px]"
           />

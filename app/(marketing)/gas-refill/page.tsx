@@ -280,7 +280,7 @@ export default function GasRefillPage() {
       </section>
 
       {/* Final CTA */}
-      <OrderRide title="Running low? Order a refill." imageSrc="/gasRider01.png"/>
+      <OrderRide title="Running low? Order a refill." imageSrc="/gasRider03.png"/>
     </>
   );
 }
