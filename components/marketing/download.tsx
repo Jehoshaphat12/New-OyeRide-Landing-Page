@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import phoneMockup from "@/public/phone.png";
+import Image from "next/image";
 
 type Tab = {
   id: string;
@@ -68,10 +70,12 @@ export function Download() {
         <div className="mt-16 grid items-center gap-12 lg:grid-cols-2 lg:gap-12">
           {/* Phone mockup */}
           <div className="flex justify-center lg:justify-end">
-            <img
-              src="/Phone.png"
+            <Image
+              src={phoneMockup}
               alt="OyeRide apps shown on a phone"
-              className="w-full max-w-[460px]"
+              className="w-full max-w-[460px] h-auto"
+              sizes="(min-width: 1024px) 460px, 90vw"
+              priority={false}
             />
           </div>
 

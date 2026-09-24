@@ -162,9 +162,9 @@ export function Footer() {
             <Link href="/cookies" className="transition hover:text-white">
               Cookies
             </Link>
-            <Link href="/sitemap.xml" className="transition hover:text-white">
+            {/* <Link href="/sitemap.xml" className="transition hover:text-white">
               Sitemap
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

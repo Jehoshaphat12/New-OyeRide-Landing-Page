@@ -165,7 +165,7 @@ export default function LawEnforcementPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#054997] py-16 text-white lg:py-20">
+      <section className="bg-[#000000] py-16 text-white lg:py-20">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
             Are you a user wanting your data?

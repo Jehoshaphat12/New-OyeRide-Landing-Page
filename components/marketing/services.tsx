@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useRef, type ReactNode } from "react";
 
@@ -66,7 +67,7 @@ const services: Service[] = [
     tag: "Eco",
     cta: "Book a bicycle",
     href: "/bicycle-delivery",
-    image: "/bicycle_delivery1.jpg",
+    image: "/bicycleRider4.png",
   },
   {
     title: "Gas Refill",
@@ -211,10 +212,12 @@ function ServiceCard({ service }: { service: Service }) {
       className="group relative flex h-[500px] w-full flex-shrink-0 snap-start flex-col justify-end overflow-hidden rounded-3xl text-white md:h-[540px] md:w-[380px]"
     >
       {/* Background image */}
-      <img
+      <Image
         src={service.image}
         alt={service.title}
-        className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+        fill
+        sizes="(min-width: 768px) 380px, 100vw"
+        className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
       />
 
       {/* Gradient overlay — heavier at bottom for content readability */}

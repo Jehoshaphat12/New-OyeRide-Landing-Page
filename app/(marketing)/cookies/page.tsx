@@ -115,7 +115,7 @@ export default function CookiesPage() {
 
         <div className="w-full">
           <img
-            src="/cookiesHero.png"
+            src="/cookieImg2.png"
             alt=""
             className="h-[400px] w-full object-cover sm:h-[500px] lg:h-[640px]"
           />

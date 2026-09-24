@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export function Hero() {
@@ -30,11 +31,14 @@ export function Hero() {
       </div>
 
       {/* Bottom: full-bleed image */}
-      <div className="w-full">
-        <img
+      <div className="relative h-[400px] w-full sm:h-[500px] lg:h-[640px]">
+        <Image
           src="/heroImg2.png"
           alt="OyeRide passengers by the coast"
-          className="h-[400px] w-full object-cover object-top sm:h-[500px] lg:h-[640px]"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-top"
         />
       </div>
     </section>

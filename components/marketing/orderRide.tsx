@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 interface Props {
@@ -14,11 +15,13 @@ export function OrderRide(Props: Props) {
         <div className="relative overflow-hidden rounded-3xl">
           {/* Image — top on mobile, full background on desktop */}
           <div className="relative h-64 w-full md:absolute md:inset-0 md:h-full">
-            <img
+            <Image
               // src="/heroImg1.png"
               src={Props.imageSrc ? Props.imageSrc : "/heroImg1.png"}
               alt="Rider in an OyeRide car"
-              className="h-full w-full object-cover object-center"
+              fill
+              sizes="(min-width: 768px) 100vw, 100vw"
+              className="object-cover object-center"
             />
           </div>
 
@@ -36,11 +39,13 @@ export function OrderRide(Props: Props) {
 
             {/* QR code — desktop only */}
             <div className="mt-10 hidden items-center gap-5 md:flex">
-              <div className="flex h-24 w-24 shrink-0 items-center justify-center rounded-2xl bg-white p-2 lg:h-28 lg:w-28">
-                <img
+              <div className="relative flex h-24 w-24 shrink-0 items-center justify-center rounded-2xl bg-white p-2 lg:h-28 lg:w-28">
+                <Image
                   src="/oyerideQR.png"
                   alt="QR code to download the OyeRide app"
-                  className="h-full w-full object-contain"
+                  fill
+                  sizes="112px"
+                  className="object-contain p-2"
                 />
               </div>
               <div>

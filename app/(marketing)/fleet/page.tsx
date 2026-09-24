@@ -137,7 +137,7 @@ export default function FleetPage() {
 
         <div className="w-full">
           <img
-            src="/fleetHero.png"
+            src="/motorFleet.png"
             alt="OyeRide fleet of motorcycles lined up in Kasoa"
             className="h-[400px] w-full object-cover sm:h-[500px] lg:h-[640px]"
           />
@@ -195,7 +195,7 @@ export default function FleetPage() {
               <img
                 src="/fleetOwner.png"
                 alt="Fleet owner managing riders in OyeRide"
-                className="aspect-[4/5] w-full object-cover"
+                className="aspect-[4/5] w-full object-cover h-[400px]"
               />
             </div>
 
@@ -268,9 +268,9 @@ export default function FleetPage() {
             {/* Image */}
             <div className="relative overflow-hidden rounded-3xl">
               <img
-                src="/fleetRequirements.png"
+                src="/fleetOwner2.png"
                 alt="Fleet owner verifying motorcycle details"
-                className="aspect-[4/5] w-full object-cover"
+                className="aspect-[4/5] w-full h-[450px] object-cover"
               />
             </div>
 

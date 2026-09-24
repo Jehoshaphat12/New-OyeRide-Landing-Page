@@ -377,7 +377,7 @@ export default function CourierPage() {
         </div>
       </section>
 
-      <OrderRide title="Start earning now!" imageSrc="deliveryRider05.png" description="Download the OyeRide app on iOS and Android now to start earning some extra money."/>
+      <OrderRide title="Start earning now!" imageSrc="/deliveryRider05.png" description="Download the OyeRide app on iOS and Android now to start earning some extra money."/>
 
       {/* Final CTA */}
       <section className="bg-[#070707] py-20 text-white lg:py-28">

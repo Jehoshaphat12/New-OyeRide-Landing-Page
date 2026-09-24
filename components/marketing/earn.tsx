@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 type EarnBlock = {
@@ -88,10 +89,12 @@ function EarnCard({ block }: { block: EarnBlock }) {
   return (
     <div className="group relative flex h-[550px] flex-col overflow-hidden rounded-3xl bg-zinc-900">
       {/* Full-bleed image */}
-      <img
+      <Image
         src={block.image}
         alt={block.imageAlt}
-        className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+        fill
+        sizes="(min-width: 1024px) 25vw (min-width: 640px) 50vw, 100vw"
+        className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
       />
 
       {/* Badge */}

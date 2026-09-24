@@ -309,7 +309,7 @@ export default function DeliveryPage() {
       </section>
 
       {/* Final CTA */}
-      <OrderRide title="Got something to send?" imageSrc="deliveryRider05.png" description="Download the OyeRide app on iOS and Android now to send your parcel."/>
+      <OrderRide title="Got something to send?" imageSrc="/deliveryRider05.png" description="Download the OyeRide app on iOS and Android now to send your parcel."/>
     </>
   );
 }

@@ -208,7 +208,7 @@ export default function DrivePage() {
         </div>
       </section>
 
-      <OrderRide title="Start earning now!" imageSrc="RiderImg4.png" description="Download the OyeRide app on iOS and Android now and start earning instantly." />
+      <OrderRide title="Start earning now!" imageSrc="/RiderImg4.png" description="Download the OyeRide app on iOS and Android now and start earning instantly." />
 
       {/* Final CTA */}
       <section className="bg-[#000000] py-20 text-white lg:py-28">
