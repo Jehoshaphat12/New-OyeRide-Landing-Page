@@ -82,7 +82,7 @@ export default function MotorCourierPage() {
           </h1>
           <p className="mt-6 max-w-2xl text-lg font-semibold leading-7 text-white/85">
             Deliver parcels, documents, and packages across Kasoa on your
-            motorcycle. Longer distances. Bigger loads. Higher payouts.
+            motorcycle.
           </p>
           <div className="mt-10 flex w-full flex-col items-center justify-center gap-4 sm:flex-row">
             <Link

@@ -1,7 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { OrderRide } from "@/components/marketing/orderRide";
-import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Gas Refill Delivery — OyeRide | Refill Without Leaving Home",
@@ -98,7 +97,7 @@ export default function GasRefillPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-[#f7a902] text-white">
+      <section className="relative bg-[#ffbb00] text-white">
         <div className="mx-auto flex max-w-4xl flex-col items-center px-6 pt-20 pb-16 text-center lg:pt-28 lg:pb-20">
           <h1 className="text-5xl font-semibold tracking-tight sm:text-6xl lg:text-7xl">
             Gas refill, at your door.
@@ -125,13 +124,11 @@ export default function GasRefillPage() {
           </div>
         </div>
 
-        <div className="relative w-full h-[400px] w-full sm:h-[500px] lg:h-[640px]">
-          <Image
+        <div className="w-full">
+          <img
             src="/gasRider02.png"
             alt="OyeRide gas cylinder refill delivery"
-            fill
-            priority
-            className=" object-cover "
+            className="h-[400px] w-full object-cover sm:h-[500px] lg:h-[640px]"
           />
         </div>
       </section>
@@ -247,12 +244,11 @@ export default function GasRefillPage() {
                 cylinder, every trip, every step is checked so you can cook with
                 confidence.
               </p>
-               <div className="relative aspect-[4/5] w-full h-[30rem] mt-5 overflow-hidden rounded-3xl">
-              <Image
+               <div className="relative mt-5 overflow-hidden rounded-3xl">
+              <img
                 src="/gas-refill01.png"
                 alt="OyeRide rider handing over a delivered parcel"
-                fill
-                className="object-cover object-top"
+                className="aspect-[4/5] w-full h-[30rem] object-cover object-top"
               />
             </div>
             </div>

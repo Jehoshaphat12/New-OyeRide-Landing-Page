@@ -3,11 +3,31 @@ import { privacyNotices } from "@/lib/privacy-notices";
 
 const baseUrl = "https://oyeridegh.com";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 
+
   // Main marketing pages
   const staticPages: MetadataRoute.Sitemap = [
+     {
+      url: `${baseUrl}/`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 1.0,
+      images: [
+        `${baseUrl}/heroImg2.png`,
+        // Legacy filenames — kept so previously-indexed Google Images results
+        // (from the old static site) keep resolving instead of 404ing.
+        `${baseUrl}/img2.jpg`,
+        `${baseUrl}/img3.png`,
+        `${baseUrl}/img4.jpg`,
+        `${baseUrl}/motor_ride2.jpg`,
+        `${baseUrl}/motor_delivery.jpg`,
+        `${baseUrl}/bicycle_delivery2.jpg`,
+      ],
+    },
     { url: `${baseUrl}/`, lastModified: now, changeFrequency: "weekly", priority: 1.0 },
     { url: `${baseUrl}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/contact`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
@@ -53,6 +73,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   return [
+    {
+      url: baseUrl,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 1,
+    },
     ...staticPages,
     ...servicePages,
     ...partnerPages,
