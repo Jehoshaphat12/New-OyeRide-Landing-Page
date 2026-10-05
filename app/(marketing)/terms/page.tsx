@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 
@@ -146,7 +147,7 @@ export default function TermsPage() {
           <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
             Terms of Service
           </h1>
-          <p className="mt-6 max-w-2xl text-lg font-semibold leading-7 text-white/85">
+          <p className="mt-6 max-w-2xl text-lg font-normal leading-7 text-white/85">
             The agreement that governs your use of the OyeRide app, website,
             and services.
           </p>
@@ -155,13 +156,16 @@ export default function TermsPage() {
           </p>
         </div>
 
-        <div className="w-full">
-          <img
-            src="/termsImg2.png"
-            alt=""
-            className="h-[400px] w-full object-cover sm:h-[500px] lg:h-[640px]"
-          />
-        </div>
+        <div className="relative w-full h-[400px] sm:h-[500px] lg:h-[640px]">
+
+          <Image
+    src="/termsImg2.png"
+    alt=""
+    fill
+    sizes="100vw"
+    className="object-cover"
+/>
+  </div>
       </section>
 
       {/* Intro */}

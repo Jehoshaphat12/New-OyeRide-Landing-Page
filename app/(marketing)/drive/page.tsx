@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { OrderRide } from "@/components/marketing/orderRide";
@@ -68,7 +69,7 @@ export default function DrivePage() {
             Earn on your own schedule.
           </h1>
 
-          <p className="mt-6 max-w-2xl text-lg font-semibold leading-7 text-white/85">
+          <p className="mt-6 max-w-2xl text-lg font-normal leading-7 text-white/85">
             Set your own hours. Accept rides on your terms. Get paid every day. Join the
             OyeRide rider network and turn your motorcycle into income.
           </p>
@@ -90,13 +91,16 @@ export default function DrivePage() {
         </div>
 
         {/* Full-bleed image below */}
-        <div className="w-full">
-          <img
-            src="/RiderImg4.png"
-            alt="OyeRide rider on a motorcycle"
-            className="h-[400px] w-full object-cover sm:h-[500px] lg:h-[640px]"
-          />
-        </div>
+        <div className="relative w-full h-[400px] sm:h-[500px] lg:h-[640px]">
+
+          <Image
+    src="/RiderImg4.jpg"
+    alt="OyeRide rider on a motorcycle"
+    fill
+    sizes="100vw"
+    className="object-cover"
+/>
+  </div>
       </section>
 
       {/* Features */}
@@ -176,13 +180,16 @@ export default function DrivePage() {
 
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
             {/* Image */}
-            <div className="relative overflow-hidden rounded-3xl">
-              <img
-                src="/RiderImg2.jpg"
-                alt="OyeRide rider gearing up for a trip"
-                className="aspect-[4/5] w-full object-cover"
-              />
-            </div>
+            <div className="relative overflow-hidden rounded-3xl aspect-[4/5] w-full">
+
+              <Image
+    src="/RiderImg2.jpg"
+    alt="OyeRide rider gearing up for a trip"
+    fill
+    sizes="(min-width: 1024px) 50vw, 100vw"
+    className="object-cover"
+/>
+  </div>
 
             {/* Checklist */}
             <div>
@@ -208,7 +215,7 @@ export default function DrivePage() {
         </div>
       </section>
 
-      <OrderRide title="Start earning now!" imageSrc="/RiderImg4.png" description="Download the OyeRide app on iOS and Android now and start earning instantly." />
+      <OrderRide title="Start earning now!" imageSrc="/RiderImg4.jpg" description="Download the OyeRide app on iOS and Android now and start earning instantly." />
 
       {/* Final CTA */}
       <section className="bg-[#000000] py-20 text-white lg:py-28">

@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "oyeride-b6973"
-  }
+  },
+  "targets": {
+    "oyeride-b6973": {
+      "hosting": {
+        "oyeridegh": [
+          "oyeride"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }

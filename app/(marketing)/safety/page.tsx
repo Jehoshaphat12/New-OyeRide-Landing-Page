@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 
@@ -146,7 +147,7 @@ export default function SafetyPage() {
           <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
             Ride with confidence.
           </h1>
-          <p className="mt-6 max-w-2xl text-lg font-semibold leading-7 text-white/85">
+          <p className="mt-6 max-w-2xl text-lg font-normal leading-7 text-white/85">
             Safety isn&apos;t a feature — it&apos;s the foundation. Every rider is
             vetted, every trip is tracked, and our team is on call around the clock.
           </p>
@@ -167,13 +168,16 @@ export default function SafetyPage() {
         </div>
 
         {/* Full-bleed image below */}
-        <div className="w-full">
-          <img
-            src="/privacyImg1.png"
-            alt="OyeRide rider with passenger, safely equipped"
-            className="h-[400px] w-full object-cover sm:h-[500px] lg:h-[640px]"
-          />
-        </div>
+        <div className="relative w-full h-[400px] sm:h-[500px] lg:h-[640px]">
+
+          <Image
+    src="/privacyImg1.jpg"
+    alt="OyeRide rider with passenger, safely equipped"
+    fill
+    sizes="100vw"
+    className="object-cover"
+/>
+  </div>
       </section>
 
       {/* Pillars */}
@@ -223,13 +227,16 @@ export default function SafetyPage() {
 
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
             {/* Image */}
-            <div className="relative overflow-hidden rounded-3xl">
-              <img
-                src="/vettingImg1.png"
-                alt="OyeRide rider verification"
-                className="aspect-[4/5] w-full object-cover"
-              />
-            </div>
+            <div className="relative overflow-hidden rounded-3xl aspect-[4/5] w-full">
+
+              <Image
+    src="/vettingImg1.jpg"
+    alt="OyeRide rider verification"
+    fill
+    sizes="(min-width: 1024px) 50vw, 100vw"
+    className="object-cover"
+/>
+  </div>
 
             {/* Checklist */}
             <div>

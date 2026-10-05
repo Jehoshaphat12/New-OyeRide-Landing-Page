@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { OrderRide } from "@/components/marketing/orderRide";
@@ -13,7 +14,7 @@ const courierTypes = [
     title: "Motor Courier",
     description:
       "Deliver parcels, documents, and small packages across Kasoa on your motorcycle. Longer distances, bigger loads, higher earnings.",
-    image: "/delivery1.png",
+    image: "/delivery1.jpg",
     requirements: [
       "Motorcycle license (Class A)",
       "Registered motorcycle in good condition",
@@ -32,7 +33,7 @@ const courierTypes = [
     title: "Bicycle Courier",
     description:
       "Deliver documents, food, and small parcels on your bicycle. Short distances, low overhead, zero fuel costs.",
-    image: "/bicycleRider02.png",
+    image: "/bicycleRider02.jpg",
     requirements: [
       "A bicycle in good condition",
       "A delivery backpack or rear rack",
@@ -119,7 +120,7 @@ export default function CourierPage() {
             Earn on every delivery.
           </h1>
 
-          <p className="mt-6 max-w-2xl text-lg font-semibold leading-7 text-white/85">
+          <p className="mt-6 max-w-2xl text-lg font-normal leading-7 text-white/85">
             Join the OyeRide courier network. Deliver parcels on a motorcycle or
             bicycle, work when it suits you, and get paid for every drop-off.
           </p>
@@ -140,13 +141,16 @@ export default function CourierPage() {
           </div>
         </div>
 
-        <div className="w-full">
-          <img
-            src="/deliveryMan.png"
-            alt="OyeRide courier making a delivery"
-            className="h-[400px] w-full object-cover sm:h-[500px] lg:h-[640px]"
-          />
-        </div>
+        <div className="relative w-full h-[400px] sm:h-[500px] lg:h-[640px]">
+
+          <Image
+    src="/deliveryMan.jpg"
+    alt="OyeRide courier making a delivery"
+    fill
+    sizes="100vw"
+    className="object-cover"
+/>
+  </div>
       </section>
 
       {/* Benefits */}
@@ -201,11 +205,13 @@ export default function CourierPage() {
                 className="group relative overflow-hidden rounded-3xl"
               >
                 {/* Background image */}
-                <img
+                <Image
                   src={type.image}
                   alt=""
-                  className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                />
+                  fill
+                  sizes="(min-width: 1024px) 33vw, 100vw"
+                  className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                  />
 
                 {/* Gradient overlay — solid bottom-left, transparent top-right */}
                 <div className="absolute inset-0 bg-gradient-to-tr from-black via-black/60 to-transparent" />
@@ -309,13 +315,16 @@ export default function CourierPage() {
 
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
             {/* Image */}
-            <div className="relative overflow-hidden rounded-3xl">
-              <img
-                src="/bicycleRider.png"
-                alt="OyeRide couriers preparing for delivery"
-                className="aspect-[4/5] w-full object-cover"
-              />
-            </div>
+            <div className="relative overflow-hidden rounded-3xl aspect-[4/5] w-full">
+
+              <Image
+    src="/bicycleRider.jpg"
+    alt="OyeRide couriers preparing for delivery"
+    fill
+    sizes="(min-width: 1024px) 50vw, 100vw"
+    className="object-cover"
+/>
+  </div>
 
             {/* Checklist cards */}
             <div className="flex flex-col gap-5">
@@ -377,7 +386,7 @@ export default function CourierPage() {
         </div>
       </section>
 
-      <OrderRide title="Start earning now!" imageSrc="/deliveryRider05.png" description="Download the OyeRide app on iOS and Android now to start earning some extra money."/>
+      <OrderRide title="Start earning now!" imageSrc="/deliveryRider05.jpg" description="Download the OyeRide app on iOS and Android now to start earning some extra money."/>
 
       {/* Final CTA */}
       <section className="bg-[#070707] py-20 text-white lg:py-28">

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { OrderRide } from "@/components/marketing/orderRide";
@@ -114,7 +115,7 @@ export default function DeliveryPage() {
             Send anything, anywhere in Kasoa.
           </h1>
 
-          <p className="mt-6 max-w-2xl text-lg font-semibold leading-7 text-white/85">
+          <p className="mt-6 max-w-2xl text-lg font-normal leading-7 text-white/85">
             Parcels, documents, food — hand it to a rider and track it live to the door.
             OyeRide Motor Delivery gets it there the same day.
           </p>
@@ -135,13 +136,16 @@ export default function DeliveryPage() {
           </div>
         </div>
 
-        <div className="w-full">
-          <img
-            src="/Img1.png"
-            alt="OyeRide motor delivery rider"
-            className="h-[400px] w-full object-cover sm:h-[500px] lg:h-[640px]"
-          />
-        </div>
+        <div className="relative w-full h-[400px] sm:h-[500px] lg:h-[640px]">
+
+          <Image
+    src="/Img01.jpg"
+    alt="OyeRide motor delivery rider"
+    fill
+    sizes="100vw"
+    className="object-cover"
+/>
+  </div>
       </section>
 
       {/* Why choose */}
@@ -177,7 +181,7 @@ export default function DeliveryPage() {
         </div>
       </section>
 
-      <OrderRide title="Order a delivery Now!" imageSrc="/Img1.png" />
+      <OrderRide title="Order a delivery Now!" imageSrc="/Img01.jpg" />
 
       {/* Use cases */}
             {/* Use cases */}
@@ -193,13 +197,16 @@ export default function DeliveryPage() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
             {/* Image */}
-            <div className="relative overflow-hidden rounded-3xl">
-              <img
-                src="/deliveryRider03.png"
-                alt="OyeRide rider handing over a delivered parcel"
-                className="aspect-[4/5] w-full object-cover"
-              />
-            </div>
+            <div className="relative overflow-hidden rounded-3xl aspect-[4/5] w-full">
+
+              <Image
+    src="/deliveryRider03.jpg"
+    alt="OyeRide rider handing over a delivered parcel"
+    fill
+    sizes="(min-width: 1024px) 50vw, 100vw"
+    className="object-cover"
+/>
+  </div>
 
             {/* Copy + cards */}
             <div>
@@ -263,13 +270,16 @@ export default function DeliveryPage() {
               <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
                 Your parcel is in good hands.
               </h2>
-              <div className="relative mt-5 overflow-hidden rounded-3xl">
-              <img
-                src="/deliveryMan.png"
-                alt="OyeRide rider handing over a delivered parcel"
-                className="aspect-[4/5] w-full h-[30rem] object-cover object-top"
-              />
-            </div>
+              <div className="relative mt-5 overflow-hidden rounded-3xl aspect-[4/5] w-full h-[30rem]">
+
+              <Image
+    src="/deliveryMan.jpg"
+    alt="OyeRide rider handing over a delivered parcel"
+    fill
+    sizes="(min-width: 1024px) 50vw, 100vw"
+    className="object-cover object-top"
+/>
+  </div>
               <p className="mt-6 text-base leading-7 text-zinc-600 ">
                 Every delivery is tracked, every rider is vetted, and every parcel is
                 handled like it&apos;s our own. Send with confidence.
@@ -309,7 +319,7 @@ export default function DeliveryPage() {
       </section>
 
       {/* Final CTA */}
-      <OrderRide title="Got something to send?" imageSrc="/deliveryRider05.png" description="Download the OyeRide app on iOS and Android now to send your parcel."/>
+      <OrderRide title="Got something to send?" imageSrc="/deliveryRider05.jpg" description="Download the OyeRide app on iOS and Android now to send your parcel."/>
     </>
   );
 }

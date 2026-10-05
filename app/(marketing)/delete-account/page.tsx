@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 
@@ -137,7 +138,7 @@ Thank you.
           <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
             Delete your account
           </h1>
-          <p className="mt-6 max-w-2xl text-lg font-semibold leading-7 text-white/85">
+          <p className="mt-6 max-w-2xl text-lg font-normal leading-7 text-white/85">
             We&apos;re sorry to see you go. You can request full deletion of
             your OyeRide account and all associated personal data.
           </p>
@@ -157,13 +158,16 @@ Thank you.
           </div>
         </div>
 
-        <div className="w-full">
-          <img
-            src="/tableImg2.png"
-            alt=""
-            className="h-[400px] w-full object-cover sm:h-[500px] lg:h-[640px]"
-          />
-        </div>
+        <div className="relative w-full h-[400px] sm:h-[500px] lg:h-[640px]">
+
+          <Image
+    src="/tableImg2.png"
+    alt=""
+    fill
+    sizes="100vw"
+    className="object-cover"
+/>
+  </div>
       </section>
 
       {/* Intro */}

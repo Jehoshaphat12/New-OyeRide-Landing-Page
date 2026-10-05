@@ -11,7 +11,7 @@ export function Hero() {
         </h1>
 
         <p className="mt-6 max-w-2xl text-lg font-semibold leading-6.5 text-zinc-600 ">
-          Get where you need to go — fast, safe, and affordable. Book a ride in seconds with OyeRide.
+         Oye Ride connects you with nearby motorcycle riders in seconds. Book a ride, send a package, or deliver eco-friendly — all from one app.
         </p>
 
         <div className="mt-8 flex w-full flex-col items-center justify-center gap-4 sm:flex-row">
@@ -33,7 +33,7 @@ export function Hero() {
       {/* Bottom: full-bleed image */}
       <div className="relative h-[400px] w-full sm:h-[500px] lg:h-[640px]">
         <Image
-          src="/heroImg2.png"
+          src="/heroImg2.jpg"
           alt="OyeRide passengers by the coast"
           fill
           priority

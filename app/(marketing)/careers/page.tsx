@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 
@@ -59,7 +60,7 @@ const openRoles = [
     location: "Kasoa, Ghana",
     description:
       "Build features across the OyeRide app — from the rider experience to internal operations tools. React Native, Node, and Firebase.",
-    image: "/roleImg1.png", // Replace with your actual image path
+    image: "/RoleImg1.jpg", // Replace with your actual image path
   },
   {
     title: "Operations Lead",
@@ -67,7 +68,7 @@ const openRoles = [
     location: "Kasoa, Ghana",
     description:
       "Own rider and courier onboarding, quality, and city expansion. You'll work directly with our teams on the ground.",
-    image: "/roleImg2.png", // Replace with your actual image path
+    image: "/RoleImg2.jpg", // Replace with your actual image path
   },
   {
     title: "Customer Support Associate",
@@ -75,7 +76,7 @@ const openRoles = [
     location: "Kasoa, Ghana",
     description:
       "Be the voice of OyeRide for our passengers, riders, and couriers. Handle live trip issues and follow-ups by email.",
-    image: "/roleImg3.png", // Replace with your actual image path
+    image: "/RoleImg3.jpg", // Replace with your actual image path
   },
 ];
 
@@ -97,7 +98,7 @@ export default function CareersPage() {
           <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
             Build the future of transport in Ghana.
           </h1>
-          <p className="mt-6 max-w-2xl text-lg font-semibold leading-7 text-white/85">
+          <p className="mt-6 max-w-2xl text-lg font-normal leading-7 text-white/85">
             We&apos;re a small, tight team based in Kasoa. If you want to help
             move millions of people across Ghana, we&apos;d love to hear from you.
           </p>
@@ -117,13 +118,16 @@ export default function CareersPage() {
           </div>
         </div>
 
-        <div className="w-full">
-          <img
-            src="/teamImg1.png"
-            alt="The OyeRide team at work in Kasoa"
-            className="h-[400px] w-full object-cover sm:h-[500px] lg:h-[640px]"
-          />
-        </div>
+        <div className="relative w-full h-[400px] sm:h-[500px] lg:h-[640px]">
+
+          <Image
+    src="/teamImg1.jpg"
+    alt="The OyeRide team at work in Kasoa"
+    fill
+    sizes="100vw"
+    className="object-cover"
+/>
+  </div>
       </section>
 
       {/* How we work */}
@@ -178,13 +182,16 @@ export default function CareersPage() {
                 className="group flex flex-col overflow-hidden rounded-3xl border-2 border-blue-500/50 bg-[#054997] transition hover:border-blue-400 hover:shadow-xl md:flex-row"
               >
                 {/* Image Section */}
-                <div className="relative h-64 w-full shrink-0 md:h-auto md:w-2/5 lg:w-1/3">
-                  <img
-                    src={role.image}
-                    alt={role.title}
-                    className="h-full w-full object-cover"
-                  />
-                </div>
+                <div className="relative h-64 w-full shrink-0 md:h-auto md:w-2/5 lg:w-1/3 h-full">
+
+                  <Image
+    src={role.image}
+    alt={role.title}
+    fill
+    sizes="(min-width: 1024px) 50vw, 100vw"
+    className="object-cover"
+/>
+  </div>
 
                 {/* Content Section */}
                 <div className="flex flex-1 flex-col justify-center p-6 sm:p-8">
@@ -233,13 +240,16 @@ export default function CareersPage() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
             {/* Image */}
-            <div className="relative overflow-hidden rounded-3xl">
-              <img
-                src="/RoleImg1.png"
-                alt="The OyeRide team"
-                className="aspect-[4/5] w-full object-cover"
-              />
-            </div>
+            <div className="relative overflow-hidden rounded-3xl aspect-[4/5] w-full">
+
+              <Image
+    src="/RoleImg1.jpg"
+    alt="The OyeRide team"
+    fill
+    sizes="(min-width: 1024px) 50vw, 100vw"
+    className="object-cover"
+/>
+  </div>
 
             {/* Perks list */}
             <div>

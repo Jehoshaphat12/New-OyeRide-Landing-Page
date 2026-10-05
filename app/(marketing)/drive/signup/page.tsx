@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { OrderRide } from "@/components/marketing/orderRide";
@@ -58,7 +59,7 @@ export default function RiderSignupPage() {
           <h1 className="mt-8 text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
             Sign up as a rider.
           </h1>
-          <p className="mt-6 max-w-2xl text-lg font-semibold leading-7 text-white/85">
+          <p className="mt-6 max-w-2xl text-lg font-normal leading-7 text-white/85">
             Rider sign-up happens directly in the OyeRide app. Download it,
             upload your documents, and you&apos;ll be earning within 24 hours.
           </p>
@@ -78,13 +79,16 @@ export default function RiderSignupPage() {
           </div>
         </div>
 
-        <div className="w-full">
-          <img
-            src="/rider01.png"
-            alt="Rider signing up in the OyeRide app"
-            className="h-[400px] w-full object-cover sm:h-[500px] lg:h-[640px]"
-          />
-        </div>
+        <div className="relative w-full h-[400px] sm:h-[500px] lg:h-[640px]">
+
+          <Image
+    src="/rider01.jpg"
+    alt="Rider signing up in the OyeRide app"
+    fill
+    sizes="100vw"
+    className="object-cover"
+/>
+  </div>
       </section>
 
       {/* Callout */}
@@ -100,7 +104,7 @@ export default function RiderSignupPage() {
         </div>
       </section>
 
-      <OrderRide title="Sign up today!" imageSrc="/RiderImg4.png" />
+      <OrderRide title="Sign up today!" imageSrc="/RiderImg4.jpg" />
 
       {/* Steps */}
       <section id="steps" className="scroll-mt-24 bg-white pb-20  lg:pb-28">
@@ -148,13 +152,16 @@ export default function RiderSignupPage() {
           </div>
 
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
-            <div className="relative overflow-hidden rounded-3xl">
-              <img
-                src="/RiderImg2.jpg"
-                alt="Documents required to sign up"
-                className="aspect-[4/5] w-full object-cover"
-              />
-            </div>
+            <div className="relative overflow-hidden rounded-3xl aspect-[4/5] w-full">
+
+              <Image
+    src="/RiderImg2.jpg"
+    alt="Documents required to sign up"
+    fill
+    sizes="(min-width: 1024px) 50vw, 100vw"
+    className="object-cover"
+/>
+  </div>
 
             <div>
               <ul className="grid gap-4 sm:grid-cols-1">
@@ -179,7 +186,7 @@ export default function RiderSignupPage() {
         </div>
       </section>
 
-      <OrderRide title="Sign up today!" imageSrc="/rider01.png" PushAside={true}/>
+      <OrderRide title="Sign up today!" imageSrc="/rider01.jpg" PushAside={true}/>
 
       {/* Final CTA */}
       <section className="bg-[#000000] py-20 text-white lg:py-28">

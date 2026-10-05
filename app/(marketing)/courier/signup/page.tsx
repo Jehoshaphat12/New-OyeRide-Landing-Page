@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 
@@ -65,7 +66,7 @@ export default function CourierSignupPage() {
           <h1 className="mt-8 text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
             Sign up as a courier.
           </h1>
-          <p className="mt-6 max-w-2xl text-lg font-semibold leading-7 text-white/85">
+          <p className="mt-6 max-w-2xl text-lg font-normal leading-7 text-white/85">
             Motor or bicycle — courier sign-up happens in the OyeRide app.
             Download it, upload your documents, and start earning within 24 hours.
           </p>
@@ -85,13 +86,16 @@ export default function CourierSignupPage() {
           </div>
         </div>
 
-        <div className="w-full">
-          <img
-            src="/privacyImg1.png"
-            alt="Courier signing up in the OyeRide app"
-            className="h-[400px] w-full object-cover sm:h-[500px] lg:h-[640px]"
-          />
-        </div>
+        <div className="relative w-full h-[400px] sm:h-[500px] lg:h-[640px]">
+
+          <Image
+    src="/privacyImg1.jpg"
+    alt="Courier signing up in the OyeRide app"
+    fill
+    sizes="100vw"
+    className="object-cover"
+/>
+  </div>
       </section>
 
       {/* Callout */}
@@ -153,13 +157,16 @@ export default function CourierSignupPage() {
           </div>
 
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
-            <div className="relative overflow-hidden rounded-3xl">
-              <img
-                src="/tableImg1.png"
-                alt="Documents required for courier sign-up"
-                className="aspect-[4/5] w-full object-cover"
-              />
-            </div>
+            <div className="relative overflow-hidden rounded-3xl aspect-[4/5] w-full">
+
+              <Image
+    src="/tableImg1.png"
+    alt="Documents required for courier sign-up"
+    fill
+    sizes="(min-width: 1024px) 50vw, 100vw"
+    className="object-cover"
+/>
+  </div>
 
             <div className="space-y-6">
               {/* Motor courier */}

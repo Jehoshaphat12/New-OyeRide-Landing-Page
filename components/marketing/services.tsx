@@ -41,7 +41,7 @@ const services: Service[] = [
     tag: "Popular",
     cta: "Get started",
     href: "/rides",
-    image: "/ride00.png",
+    image: "/ride00.jpg",
   },
   {
     title: "Delivery",
@@ -54,7 +54,7 @@ const services: Service[] = [
     tag: "Same-day",
     cta: "Book a delivery",
     href: "/delivery",
-    image: "/delivery1.png",
+    image: "/delivery1.jpg",
   },
   {
     title: "Bicycle Delivery",
@@ -67,7 +67,7 @@ const services: Service[] = [
     tag: "Eco",
     cta: "Book a bicycle",
     href: "/bicycle-delivery",
-    image: "/bicycleRider4.png",
+    image: "/bicycleRider4.jpg",
   },
   {
     title: "Gas Refill",

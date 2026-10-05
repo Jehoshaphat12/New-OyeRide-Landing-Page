@@ -17,7 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 1.0,
       images: [
-        `${baseUrl}/heroImg2.png`,
+        `${baseUrl}/heroImg2.jpg`,
         // Legacy filenames — kept so previously-indexed Google Images results
         // (from the old static site) keep resolving instead of 404ing.
         `${baseUrl}/img2.jpg`,

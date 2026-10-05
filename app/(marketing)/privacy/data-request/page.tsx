@@ -66,7 +66,7 @@ Thank you.
           <h1 className="mt-8 text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
             Personal data request
           </h1>
-          <p className="mt-6 max-w-2xl text-lg font-semibold leading-7 text-white/85">
+          <p className="mt-6 max-w-2xl text-lg font-normal leading-7 text-white/85">
             Access, correct, delete, or port your OyeRide data. It takes about 2
             minutes to submit a request.
           </p>

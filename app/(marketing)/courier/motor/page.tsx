@@ -1,3 +1,4 @@
+import Image from "next/image";
 // app/(marketing)/courier/motor/page.tsx
 import Link from "next/link";
 import type { Metadata } from "next";
@@ -80,7 +81,7 @@ export default function MotorCourierPage() {
           <h1 className="mt-8 text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
             Motor courier.
           </h1>
-          <p className="mt-6 max-w-2xl text-lg font-semibold leading-7 text-white/85">
+          <p className="mt-6 max-w-2xl text-lg font-normal leading-7 text-white/85">
             Deliver parcels, documents, and packages across Kasoa on your
             motorcycle.
           </p>
@@ -100,13 +101,16 @@ export default function MotorCourierPage() {
           </div>
         </div>
 
-        <div className="w-full">
-          <img
-            src="/heroImg2.png"
-            alt="OyeRide motor courier with delivery box"
-            className="h-[400px] w-full object-cover sm:h-[500px] lg:h-[640px]"
-          />
-        </div>
+        <div className="relative w-full h-[400px] sm:h-[500px] lg:h-[640px]">
+
+          <Image
+    src="/heroImg2.jpg"
+    alt="OyeRide motor courier with delivery box"
+    fill
+    sizes="100vw"
+    className="object-cover"
+/>
+  </div>
       </section>
 
       {/* Benefits */}
@@ -185,13 +189,16 @@ export default function MotorCourierPage() {
           </div>
 
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
-            <div className="relative overflow-hidden rounded-3xl">
-              <img
-                src="/ride00.png"
-                alt="Motor courier verifying details"
-                className="aspect-[4/5] w-full object-cover"
-              />
-            </div>
+            <div className="relative overflow-hidden rounded-3xl aspect-[4/5] w-full">
+
+              <Image
+    src="/ride00.jpg"
+    alt="Motor courier verifying details"
+    fill
+    sizes="(min-width: 1024px) 50vw, 100vw"
+    className="object-cover"
+/>
+  </div>
 
             <div>
               <ul className="grid gap-4 sm:grid-cols-1">

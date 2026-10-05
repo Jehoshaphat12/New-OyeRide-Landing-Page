@@ -168,6 +168,47 @@ export function Header() {
   const [mobileExpandedTab, setMobileExpandedTab] = useState<string | null>(null);
   const headerRef = useRef<HTMLElement>(null);
 
+  // NEW: scroll-driven visibility
+const [hidden, setHidden] = useState(false);
+const [scrolled, setScrolled] = useState(false);
+const lastScrollY = useRef(0);
+
+
+
+// Hide on scroll-down, reveal on scroll-up (Bolt-style).
+useEffect(() => {
+  lastScrollY.current = window.scrollY;
+  setScrolled(window.scrollY > 10);
+
+  const handleScroll = () => {
+    const y = window.scrollY;
+    const prev = lastScrollY.current;
+    const delta = y - prev;
+
+    setScrolled(y > 10);
+
+    // Ignore tiny jitters (trackpad / momentum scrolling).
+    if (Math.abs(delta) < 4) return;
+
+    // Always visible near the very top so the transparent state is reachable.
+    if (y < 80) {
+      setHidden(false);
+    } else if (delta > 0) {
+      // Scrolling down → hide, and close any open mega-menu.
+      setHidden(true);
+      setOpenTab(null);
+    } else {
+      // Scrolling up → reveal.
+      setHidden(false);
+    }
+
+    lastScrollY.current = y;
+  };
+
+  window.addEventListener("scroll", handleScroll, { passive: true });
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
+
   // Close desktop menu on outside click
   useEffect(() => {
     const handleClick = (e: MouseEvent) => {
@@ -232,8 +273,8 @@ export function Header() {
       {/* ═══════════ HEADER BAR (sticky) ═══════════ */}
       <header
         ref={headerRef}
-        className="sticky top-0 z-50 w-full bg-[#054997] text-white"
         onMouseLeave={() => setOpenTab(null)}
+        className="sticky top-0 z-50 w-full bg-[#054997] text-white"
       >
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 lg:h-20">
           <Link
@@ -241,7 +282,8 @@ export function Header() {
             onClick={closeMobile}
             className="text-2xl font-extrabold tracking-tight lg:text-3xl"
           >
-            OyeRide
+            Oye
+            <span className="font-normal">Ride</span>
           </Link>
 
           {/* Desktop nav tabs */}

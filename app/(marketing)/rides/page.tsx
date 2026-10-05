@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { OrderRide } from "@/components/marketing/orderRide";
@@ -92,12 +93,11 @@ export default function RidesPage() {
       <section className="relative bg-[#054997] text-white">
         <div className="mx-auto flex max-w-4xl flex-col items-center px-6 pt-20 pb-16 text-center lg:pt-28 lg:pb-20">
           <h1 className="text-5xl font-semibold tracking-tight sm:text-6xl lg:text-7xl">
-            Your ride, seconds away.
+            Your ride is seconds away.
           </h1>
 
-          <p className="mt-6 max-w-2xl text-lg font-semibold leading-7 text-white/85">
-            Book a motorcycle ride in Kasoa in seconds. Verified riders, upfront pricing,
-            and real-time tracking — from pickup to drop-off.
+          <p className="mt-6 max-w-2xl text-lg font-normal leading-7 text-white/85">
+            Lets connect you with nearby verified motorcycle riders in seconds and get you moving. Don't be late again.
           </p>
 
           <div className="mt-10 flex w-full flex-col items-center justify-center gap-4 sm:flex-row">
@@ -117,13 +117,16 @@ export default function RidesPage() {
         </div>
 
         {/* Full-bleed image below */}
-        <div className="w-full">
-          <img
-            src="/heroImg2.png"
-            alt="OyeRide rider on the road"
-            className="h-[400px] w-full object-cover sm:h-[500px] lg:h-[640px]"
-          />
-        </div>
+        <div className="relative w-full h-[400px] sm:h-[500px] lg:h-[640px]">
+
+          <Image
+    src="/heroImg2.jpg"
+    alt="OyeRide rider on the road"
+    fill
+    sizes="100vw"
+    className="object-cover"
+/>
+  </div>
       </section>
 
       {/* Why choose */}
@@ -198,13 +201,16 @@ export default function RidesPage() {
               <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
                 Your safety comes first.
               </h2>
-              <div className="relative overflow-hidden mt-5 rounded-3xl">
-              <img
-                src="/ride00.png"
-                alt="OyeRide rider gearing up for a trip"
-                className="aspect-[4/5] w-full h-[30rem] object-cover"
-              />
-            </div>
+              <div className="relative overflow-hidden mt-5 rounded-3xl aspect-[4/5] w-full h-[30rem]">
+
+              <Image
+    src="/ride00.jpg"
+    alt="OyeRide rider gearing up for a trip"
+    fill
+    sizes="(min-width: 1024px) 50vw, 100vw"
+    className="object-cover"
+/>
+  </div>
               <p className="mt-6 text-base leading-7 text-zinc-600 ">
                 Every OyeRide trip is built on trust. We vet our riders, track every journey,
                 and give you the tools to ride with confidence — day or night.

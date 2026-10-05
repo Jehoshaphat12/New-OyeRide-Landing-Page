@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 
@@ -115,7 +116,7 @@ export default function FleetPage() {
           <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
             Run a fleet. Earn from every ride.
           </h1>
-          <p className="mt-6 max-w-2xl text-lg font-semibold leading-7 text-white/85">
+          <p className="mt-6 max-w-2xl text-lg font-normal leading-7 text-white/85">
             List your motorcycles on OyeRide, manage your riders, and grow
             your transport business with real-time tracking and weekly payouts.
           </p>
@@ -135,13 +136,16 @@ export default function FleetPage() {
           </div>
         </div>
 
-        <div className="w-full">
-          <img
-            src="/motorFleet.png"
-            alt="OyeRide fleet of motorcycles lined up in Kasoa"
-            className="h-[400px] w-full object-cover sm:h-[500px] lg:h-[640px]"
-          />
-        </div>
+        <div className="relative w-full h-[400px] sm:h-[500px] lg:h-[640px]">
+
+          <Image
+    src="/motorFleet.jpg"
+    alt="OyeRide fleet of motorcycles lined up in Kasoa"
+    fill
+    sizes="100vw"
+    className="object-cover"
+/>
+  </div>
       </section>
 
       {/* Benefits */}
@@ -191,13 +195,16 @@ export default function FleetPage() {
 
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
             {/* Image */}
-            <div className="relative overflow-hidden rounded-3xl">
-              <img
-                src="/fleetOwner.png"
-                alt="Fleet owner managing riders in OyeRide"
-                className="aspect-[4/5] w-full object-cover h-[400px]"
-              />
-            </div>
+            <div className="relative overflow-hidden rounded-3xl aspect-[4/5] w-full h-[400px]">
+
+              <Image
+    src="/fleetOwner.png"
+    alt="Fleet owner managing riders in OyeRide"
+    fill
+    sizes="(min-width: 1024px) 50vw, 100vw"
+    className="object-cover"
+/>
+  </div>
 
             {/* Fleet type cards */}
             <div className="flex flex-col gap-4">
@@ -266,13 +273,16 @@ export default function FleetPage() {
 
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
             {/* Image */}
-            <div className="relative overflow-hidden rounded-3xl">
-              <img
-                src="/fleetOwner2.png"
-                alt="Fleet owner verifying motorcycle details"
-                className="aspect-[4/5] w-full h-[450px] object-cover"
-              />
-            </div>
+            <div className="relative overflow-hidden rounded-3xl aspect-[4/5] w-full h-[450px]">
+
+              <Image
+    src="/fleetOwner2.png"
+    alt="Fleet owner verifying motorcycle details"
+    fill
+    sizes="(min-width: 1024px) 50vw, 100vw"
+    className="object-cover"
+/>
+  </div>
 
             {/* Checklist */}
             <div>

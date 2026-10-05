@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { OrderRide } from "@/components/marketing/orderRide";
@@ -54,7 +55,7 @@ const values = [
 ];
 
 const stats = [
-  { value: "3", label: "Services offered" },
+  { value: "4", label: "Services offered" },
   { value: "24/7", label: "Support" },
   { value: "100%", label: "Verified riders" },
   { value: "Kasoa", label: "Built for" },
@@ -70,7 +71,7 @@ export default function AboutPage() {
             Moving Kasoa forward.
           </h1>
 
-          <p className="mt-6 max-w-2xl mx-auto text-lg font-semibold leading-7 text-white/85">
+          <p className="mt-6 max-w-2xl mx-auto text-lg font-normal leading-7 text-white/85">
             OyeRide is a Ghanaian ride-hailing company built for the way people actually
             move. Fast, fair, and safe — for riders, passengers, and businesses alike.
           </p>
@@ -83,13 +84,16 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
             {/* Image */}
-            <div className="relative overflow-hidden rounded-3xl">
-              <img
-                src="/ride01.png"
-                alt="OyeRide riders on the road in Kasoa"
-                className="aspect-[4/5] w-full object-cover"
-              />
-            </div>
+            <div className="relative overflow-hidden rounded-3xl aspect-[4/5] w-full">
+
+              <Image
+    src="/ride01.jpg"
+    alt="OyeRide riders on the road in Kasoa"
+    fill
+    sizes="(min-width: 1024px) 50vw, 100vw"
+    className="object-cover"
+/>
+  </div>
 
             {/* Copy */}
             <div>

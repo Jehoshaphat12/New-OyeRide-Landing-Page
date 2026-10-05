@@ -16,8 +16,8 @@ export function OrderRide(Props: Props) {
           {/* Image — top on mobile, full background on desktop */}
           <div className="relative h-64 w-full md:absolute md:inset-0 md:h-full">
             <Image
-              // src="/heroImg1.png"
-              src={Props.imageSrc ? Props.imageSrc : "/heroImg1.png"}
+              // src="/heroImg1.jpg"
+              src={Props.imageSrc ? Props.imageSrc : "/heroImg1.jpg"}
               alt="Rider in an OyeRide car"
               fill
               sizes="(min-width: 768px) 100vw, 100vw"

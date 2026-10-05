@@ -55,7 +55,7 @@ export default function ContactPage() {
           <h1 className="text-5xl font-semibold tracking-tight sm:text-6xl lg:text-7xl">
             Get in touch.
           </h1>
-          <p className="mt-6 mx-auto max-w-2xl text-lg font-semibold leading-7 text-white/85">
+          <p className="mt-6 mx-auto max-w-2xl text-lg font-normal leading-7 text-white/85">
             Questions, feedback, or want to partner with us? We&apos;d love to hear from you.
           </p>
         </div>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { OrderRide } from "@/components/marketing/orderRide";
@@ -103,7 +104,7 @@ export default function GasRefillPage() {
             Gas refill, at your door.
           </h1>
 
-          <p className="mt-6 max-w-2xl text-lg font-semibold leading-7 text-white/85">
+          <p className="mt-6 max-w-2xl text-lg font-normal leading-7 text-white/85">
             Skip the queue and the heavy lifting. Order a refill in the OyeRide app and
             we&apos;ll pick up, refill, and return your cylinder the same day.
           </p>
@@ -124,13 +125,16 @@ export default function GasRefillPage() {
           </div>
         </div>
 
-        <div className="w-full">
-          <img
-            src="/gasRider02.png"
-            alt="OyeRide gas cylinder refill delivery"
-            className="h-[400px] w-full object-cover sm:h-[500px] lg:h-[640px]"
-          />
-        </div>
+        <div className="relative w-full h-[400px] sm:h-[500px] lg:h-[640px]">
+
+          <Image
+    src="/gasRider02.jpg"
+    alt="OyeRide gas cylinder refill delivery"
+    fill
+    sizes="100vw"
+    className="object-cover"
+/>
+  </div>
       </section>
 
       {/* Why choose */}
@@ -166,7 +170,7 @@ export default function GasRefillPage() {
         </div>
       </section>
 
-              <OrderRide title="Running low? Order a refill." imageSrc="/gasRider01.png"/>
+              <OrderRide title="Running low? Order a refill." imageSrc="/gasRider01.jpg"/>
 
       {/* Cylinder sizes */}
       <section className="bg-zinc-50 py-20 lg:py-28">
@@ -244,13 +248,16 @@ export default function GasRefillPage() {
                 cylinder, every trip, every step is checked so you can cook with
                 confidence.
               </p>
-               <div className="relative mt-5 overflow-hidden rounded-3xl">
-              <img
-                src="/gas-refill01.png"
-                alt="OyeRide rider handing over a delivered parcel"
-                className="aspect-[4/5] w-full h-[30rem] object-cover object-top"
-              />
-            </div>
+               <div className="relative mt-5 overflow-hidden rounded-3xl aspect-[4/5] w-full h-[30rem]">
+
+              <Image
+    src="/gas-refill01.jfif"
+    alt="OyeRide rider handing over a delivered parcel"
+    fill
+    sizes="(min-width: 1024px) 50vw, 100vw"
+    className="object-cover object-top"
+/>
+  </div>
             </div>
 
             <div className="flex flex-col gap-5">
@@ -280,7 +287,7 @@ export default function GasRefillPage() {
       </section>
 
       {/* Final CTA */}
-      <OrderRide title="Running low? Order a refill." imageSrc="/gasRider03.png"/>
+      <OrderRide title="Running low? Order a refill." imageSrc="/gasRider03.jpg"/>
     </>
   );
 }

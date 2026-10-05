@@ -1,3 +1,4 @@
+import Image from "next/image";
 // app/(marketing)/courier/bicycle/page.tsx
 import Link from "next/link";
 import type { Metadata } from "next";
@@ -79,7 +80,7 @@ export default function BicycleCourierPage() {
           <h1 className="mt-8 text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
             Bicycle courier.
           </h1>
-          <p className="mt-6 max-w-2xl text-lg font-semibold leading-7 text-white/85">
+          <p className="mt-6 max-w-2xl text-lg font-normal leading-7 text-white/85">
             Deliver documents, food, and small parcels across your neighbourhood.
             Zero fuel costs, low overhead, and total flexibility.
           </p>
@@ -99,13 +100,16 @@ export default function BicycleCourierPage() {
           </div>
         </div>
 
-        <div className="w-full">
-          <img
-            src="/bicycleRider4.png"
-            alt="OyeRide bicycle courier on the street"
-            className="h-[400px] w-full object-cover sm:h-[500px] lg:h-[640px]"
-          />
-        </div>
+        <div className="relative w-full h-[400px] sm:h-[500px] lg:h-[640px]">
+
+          <Image
+    src="/bicycleRider4.jpg"
+    alt="OyeRide bicycle courier on the street"
+    fill
+    sizes="100vw"
+    className="object-cover"
+/>
+  </div>
       </section>
 
       {/* Benefits */}
@@ -184,13 +188,16 @@ export default function BicycleCourierPage() {
           </div>
 
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
-            <div className="relative overflow-hidden rounded-3xl">
-              <img
-                src="/bicycleRider02.png"
-                alt="Bicycle courier preparing for a delivery"
-                className="aspect-[4/5] w-full object-cover"
-              />
-            </div>
+            <div className="relative overflow-hidden rounded-3xl aspect-[4/5] w-full">
+
+              <Image
+    src="/bicycleRider02.jpg"
+    alt="Bicycle courier preparing for a delivery"
+    fill
+    sizes="(min-width: 1024px) 50vw, 100vw"
+    className="object-cover"
+/>
+  </div>
 
             <div>
               <ul className="grid gap-4 sm:grid-cols-1">
@@ -215,7 +222,7 @@ export default function BicycleCourierPage() {
         </div>
       </section>
 
-      <OrderRide title="Start earning now!" description="Download the OyeRide app on iOS and Android now to start earning with your bicycle now!." imageSrc="/bicycleRider4.png" PushAside={true}/>
+      <OrderRide title="Start earning now!" description="Download the OyeRide app on iOS and Android now to start earning with your bicycle now!." imageSrc="/bicycleRider4.jpg" PushAside={true}/>
 
       {/* Final CTA */}
       <section className="bg-[#000000] py-20 text-white lg:py-28">

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 
@@ -105,7 +106,7 @@ export default function MerchantPage() {
           <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
             Your business, in every pocket.
           </h1>
-          <p className="mt-6 max-w-2xl text-lg font-semibold leading-7 text-white/85">
+          <p className="mt-6 max-w-2xl text-lg font-normal leading-7 text-white/85">
             List your restaurant, shop, or pharmacy on OyeRide. Reach more
             customers across Kasoa, and let us handle the delivery.
           </p>
@@ -125,13 +126,16 @@ export default function MerchantPage() {
           </div>
         </div>
 
-        <div className="w-full">
-          <img
-            src="/salesImg3.png"
-            alt="Shop owner preparing an OyeRide order"
-            className="h-[400px] w-full object-cover sm:h-[500px] lg:h-[640px]"
-          />
-        </div>
+        <div className="relative w-full h-[400px] sm:h-[500px] lg:h-[640px]">
+
+          <Image
+    src="/salesImg3.png"
+    alt="Shop owner preparing an OyeRide order"
+    fill
+    sizes="100vw"
+    className="object-cover"
+/>
+  </div>
       </section>
 
       {/* Why list */}
@@ -181,13 +185,16 @@ export default function MerchantPage() {
 
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
             {/* Image */}
-            <div className="relative overflow-hidden rounded-3xl">
-              <img
-                src="/salesImg2.png"
-                alt="Merchant preparing a customer order"
-                className="aspect-[4/5] w-full object-cover"
-              />
-            </div>
+            <div className="relative overflow-hidden rounded-3xl aspect-[4/5] w-full">
+
+              <Image
+    src="/salesImg2.png"
+    alt="Merchant preparing a customer order"
+    fill
+    sizes="(min-width: 1024px) 50vw, 100vw"
+    className="object-cover"
+/>
+  </div>
 
             {/* Business type cards */}
             <div>
@@ -260,13 +267,16 @@ export default function MerchantPage() {
 
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
             {/* Image */}
-            <div className="relative overflow-hidden rounded-3xl">
-              <img
-                src="/salesImg1.png"
-                alt="Merchant verifying business details"
-                className="aspect-[4/5] w-full object-cover"
-              />
-            </div>
+            <div className="relative overflow-hidden rounded-3xl aspect-[4/5] w-full">
+
+              <Image
+    src="/salesImg1.jpg"
+    alt="Merchant verifying business details"
+    fill
+    sizes="(min-width: 1024px) 50vw, 100vw"
+    className="object-cover"
+/>
+  </div>
 
             {/* Checklist */}
             <div>

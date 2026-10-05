@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { OrderRide } from "@/components/marketing/orderRide";
@@ -118,7 +119,7 @@ export default function BicycleDeliveryPage() {
             Clean delivery, close to home.
           </h1>
 
-          <p className="mt-6 max-w-2xl text-lg font-semibold leading-7 text-white/85">
+          <p className="mt-6 max-w-2xl text-lg font-normal leading-7 text-white/85">
             Zero-emission bicycle delivery for documents, food, and small parcels
             in Kasoa. Cheaper than motor, kinder to the air.
           </p>
@@ -139,13 +140,16 @@ export default function BicycleDeliveryPage() {
           </div>
         </div>
 
-        <div className="w-full">
-          <img
-            src="/bicycleRider02.png"
-            alt="OyeRide bicycle courier making a delivery in Kasoa"
-            className="h-[400px] w-full object-cover sm:h-[500px] lg:h-[640px]"
-          />
-        </div>
+        <div className="relative w-full h-[400px] sm:h-[500px] lg:h-[640px]">
+
+          <Image
+    src="/bicycleRider02.jpg"
+    alt="OyeRide bicycle courier making a delivery in Kasoa"
+    fill
+    sizes="100vw"
+    className="object-cover"
+/>
+  </div>
       </section>
 
       {/* Why choose */}
@@ -195,13 +199,16 @@ export default function BicycleDeliveryPage() {
 
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
             {/* Image */}
-            <div className="relative overflow-hidden rounded-3xl">
-              <img
-                src="/bicycleRider4.png"
-                alt="OyeRide bicycle courier delivering a parcel"
-                className="aspect-[4/5] w-full object-cover"
-              />
-            </div>
+            <div className="relative overflow-hidden rounded-3xl aspect-[4/5] w-full">
+
+              <Image
+    src="/bicycleRider4.jpg"
+    alt="OyeRide bicycle courier delivering a parcel"
+    fill
+    sizes="(min-width: 1024px) 50vw, 100vw"
+    className="object-cover"
+/>
+  </div>
 
             {/* Copy + cards */}
             <div>
@@ -263,13 +270,16 @@ export default function BicycleDeliveryPage() {
               <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl ">
                 Your parcel is in good hands.
               </h2>
-              <div className="relative mt-5 overflow-hidden rounded-3xl">
-              <img
-                src="/bicycleRider02.png"
-                alt="OyeRide rider handing over a delivered parcel"
-                className="aspect-[4/5] w-full h-[30rem] object-cover object-top"
-              />
-            </div>
+              <div className="relative mt-5 overflow-hidden rounded-3xl aspect-[4/5] w-full h-[30rem]">
+
+              <Image
+    src="/bicycleRider02.jpg"
+    alt="OyeRide rider handing over a delivered parcel"
+    fill
+    sizes="(min-width: 1024px) 50vw, 100vw"
+    className="object-cover object-top"
+/>
+  </div>
               <p className="mt-6 text-base leading-7 text-zinc-600 ">
                 Bicycle couriers follow the same vetting, tracking, and proof-of-delivery
                 standard as every other OyeRide service. Small vehicle, same trust.
@@ -309,7 +319,7 @@ export default function BicycleDeliveryPage() {
       </section>
 
       {/* Final CTA */}
-      <OrderRide title="Send something small, the clean way." imageSrc="/bicycleRider4.png" PushAside={true}/>
+      <OrderRide title="Send something small, the clean way." imageSrc="/bicycleRider4.jpg" PushAside={true}/>
     </>
   );
 }

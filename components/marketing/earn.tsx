@@ -32,7 +32,7 @@ const blocks: EarnBlock[] = [
       "Deliver parcels, food, and gas refills across town. Choose your hours and earn on every drop-off.",
     cta: "Register as a courier",
     href: "/courier",
-    image: "/deliveryMan.png",
+    image: "/deliveryMan.jpg",
     imageAlt: "OyeRide courier making a delivery",
   },
   {
@@ -43,7 +43,7 @@ const blocks: EarnBlock[] = [
       "Use the bike you already own to make extra money delivering small parcels around your area.",
     cta: "Earning with your bike",
     href: "/bicycle-courier",
-    image: "/BicycleRider02.png",
+    image: "/bicycleRider02.jpg",
     imageAlt: "OyeRide bicycle courier riding through town",
   },
   {
